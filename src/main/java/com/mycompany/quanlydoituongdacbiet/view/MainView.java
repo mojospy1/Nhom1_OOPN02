@@ -44,7 +44,7 @@ public class MainView extends javax.swing.JFrame {
         btnChooseSpecialPerson.setBackground(new java.awt.Color(0, 0, 102));
         btnChooseSpecialPerson.setFont(new java.awt.Font("Times New Roman", 0, 36)); // NOI18N
         btnChooseSpecialPerson.setForeground(new java.awt.Color(255, 255, 255));
-        btnChooseSpecialPerson.setText("<html><div style='text-align: center;'>Quản lý các đối tượng đặc biệt<br></div>");
+        btnChooseSpecialPerson.setText("<html><div style='text-align: center;'>Quản lý Nhân viên<br></div>");
         btnChooseSpecialPerson.setToolTipText("");
         btnChooseSpecialPerson.setBorder(null);
         btnChooseSpecialPerson.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -58,7 +58,7 @@ public class MainView extends javax.swing.JFrame {
         btnChooseResidents.setBackground(new java.awt.Color(0, 0, 102));
         btnChooseResidents.setFont(new java.awt.Font("Times New Roman", 0, 36)); // NOI18N
         btnChooseResidents.setForeground(new java.awt.Color(255, 255, 255));
-        btnChooseResidents.setText("<html><div style='text-align: center;'>Quản lý dân cư<br></div>");
+        btnChooseResidents.setText("<html><div style='text-align: center;'>Quản lý Học Viên<br></div>");
         btnChooseResidents.setToolTipText("");
         btnChooseResidents.setBorder(null);
         btnChooseResidents.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -72,7 +72,7 @@ public class MainView extends javax.swing.JFrame {
         jLabel4.setBackground(new java.awt.Color(51, 51, 51));
         jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel4.setText("<html>Quản lý tình hình dân cư tại huyện X<br> ");
+        jLabel4.setText("<html>Quản Lý Phòng Gym<br> ");
         jLabel4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
         jLabel9.setIcon(new ImageIcon("src/main/java/com/mycompany/quanlydoituongdacbiet/view/Lovepik_com-500330964-blue-blazed-background.jpg"));
