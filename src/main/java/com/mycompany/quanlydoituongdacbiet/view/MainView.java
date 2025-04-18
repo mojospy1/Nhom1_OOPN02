@@ -58,7 +58,7 @@ public class MainView extends javax.swing.JFrame {
         btnChooseResidents.setBackground(new java.awt.Color(0, 0, 102));
         btnChooseResidents.setFont(new java.awt.Font("Times New Roman", 0, 36)); // NOI18N
         btnChooseResidents.setForeground(new java.awt.Color(255, 255, 255));
-        btnChooseResidents.setText("<html><div style='text-align: center;'>Quản lý Học Viên<br></div>");
+        btnChooseResidents.setText("<html><div style='text-align: center;'>Quản lý Hội Viên<br></div>");
         btnChooseResidents.setToolTipText("");
         btnChooseResidents.setBorder(null);
         btnChooseResidents.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
