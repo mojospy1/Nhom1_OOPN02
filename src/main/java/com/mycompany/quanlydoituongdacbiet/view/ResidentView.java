@@ -481,7 +481,7 @@ public class ResidentView extends javax.swing.JFrame {
 
         btnGroupSort.add(CheckBoxSortIDFamily);
         CheckBoxSortIDFamily.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        CheckBoxSortIDFamily.setText("Sắp xếp theo số hộ khẩu");
+        CheckBoxSortIDFamily.setText("Sắp xếp theo số ID hội viên");
         CheckBoxSortIDFamily.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         CheckBoxSortIDFamily.setOpaque(false);
 
@@ -795,7 +795,7 @@ public class ResidentView extends javax.swing.JFrame {
 
         jLabel10.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel10.setText("<html>Quản lý dân cư huyện X<br> ");
+        jLabel10.setText("<html>Quản lý phòng Gyms<br> ");
         jPanel1.add(jLabel10);
         jLabel10.setBounds(580, 10, 390, 80);
 
@@ -861,9 +861,9 @@ public class ResidentView extends javax.swing.JFrame {
         btnClear.setBounds(1070, 370, 170, 44);
 
         jLabel11.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        jLabel11.setText("Số hộ khẩu:");
+        jLabel11.setText("Số Id hội viên");
         jPanel1.add(jLabel11);
-        jLabel11.setBounds(290, 100, 100, 40);
+        jLabel11.setBounds(270, 100, 160, 40);
 
         jLabel9.setIcon(new ImageIcon("src/main/java/com/mycompany/quanlydoituongdacbiet/view/Lovepik_com-500330964-blue-blazed-background.jpg"));
         jLabel9.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
