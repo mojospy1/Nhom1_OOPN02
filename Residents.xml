@@ -2,7 +2,7 @@
 <Residents>
     <residents>
         <address>TT Năm Căn, Năm Căn, Cà Mau</address>
-        <birthday>1965-05-11T16:04:50.211+07:00</birthday>
+        <birthday>1965-05-11T17:04:50.211+08:00</birthday>
         <id>1</id>
         <name>Đỗ Nguyễn Hào</name>
         <IDFamily>01253854</IDFamily>
@@ -15,7 +15,7 @@
     </residents>
     <residents>
         <address>TT Năm Căn, Năm Căn, Cà Mau</address>
-        <birthday>1968-05-14T23:10:29.037+07:00</birthday>
+        <birthday>1968-05-15T00:10:29.037+08:00</birthday>
         <id>2</id>
         <name>Vũ Thị Thanh</name>
         <IDFamily>01253854</IDFamily>
@@ -28,21 +28,8 @@
     </residents>
     <residents>
         <address>Phường 8, TP Cà Mau, Cà Mau</address>
-        <birthday>1988-03-16T23:11:39.947+07:00</birthday>
-        <id>3</id>
-        <name>Đỗ Nguyễn Hinh</name>
-        <IDFamily>01396548</IDFamily>
-        <sex>Nam</sex>
-        <role>Chủ hộ</role>
-        <birthPlace>Ninh Bình</birthPlace>
-        <typeCMT>CCCD</typeCMT>
-        <CMT>086956321585</CMT>
-        <phoneNumber>0916815916</phoneNumber>
-    </residents>
-    <residents>
-        <address>Phường 8, TP Cà Mau, Cà Mau</address>
         <birthday>1992-05-14T00:00:00+07:00</birthday>
-        <id>4</id>
+        <id>3</id>
         <name>Nguyễn Thị Huyền Trang</name>
         <IDFamily>01396548</IDFamily>
         <sex>Nữ</sex>
@@ -55,7 +42,7 @@
     <residents>
         <address>TT Năm Căn, Năm Căn, Cà Mau</address>
         <birthday>1990-01-07T23:17:16.998+07:00</birthday>
-        <id>5</id>
+        <id>4</id>
         <name>Đỗ Thị Tuyền</name>
         <IDFamily>01253854</IDFamily>
         <sex>Nữ</sex>
@@ -68,7 +55,7 @@
     <residents>
         <address>Văn Quán, Hà Đông, Hà Nội</address>
         <birthday>2002-03-18T00:00:00+07:00</birthday>
-        <id>6</id>
+        <id>5</id>
         <name>Đỗ Nguyễn Trung Hiếu</name>
         <IDFamily>01253854</IDFamily>
         <sex>Nữ</sex>
@@ -81,7 +68,7 @@
     <residents>
         <address>Phường 8, TP Cà Mau, Cà Mau</address>
         <birthday>2016-03-16T23:25:11.306+07:00</birthday>
-        <id>7</id>
+        <id>6</id>
         <name>Đỗ Ngọc Hân</name>
         <IDFamily>01396548</IDFamily>
         <sex>Nữ</sex>
@@ -94,7 +81,7 @@
     <residents>
         <address>TT Năm Căn, Năm Căn, Cà Mau</address>
         <birthday>2020-05-07T23:26:26.859+07:00</birthday>
-        <id>8</id>
+        <id>7</id>
         <name>Nguyễn Ngọc Ánh</name>
         <IDFamily>01253854</IDFamily>
         <sex>Nữ</sex>
