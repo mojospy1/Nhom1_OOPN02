@@ -27,7 +27,11 @@ public class Residents extends Person
     private String typeCMT;
     private String CMT;
     private String phoneNumber;
-    
+    private String goiTap ;
+    private Date NgayDangKy ; 
+    private Date NgayHetHan ;
+    private SimpleDateFormat fDate=new SimpleDateFormat("dd/MM/yyyy");
+
     public Residents()
     {
         this.CMT="";
@@ -35,7 +39,7 @@ public class Residents extends Person
         this.phoneNumber="";
     }
     
-    public Residents(int id, String name, Date birthday, String address, String IDFamily, String sex, String role, String birthPlace, String typeCMT, String CMT, String phoneNumber)
+    public Residents(int id, String name, Date birthday, String address, String IDFamily, String sex, String role, String birthPlace, String typeCMT, String CMT, String phoneNumber , String goiTap , Date NgayDangKy , Date NgayHetHan )
     {
         super();
         SimpleDateFormat fDate=new SimpleDateFormat("dd/MM/yyyy");
@@ -48,6 +52,9 @@ public class Residents extends Person
         this.role = role;
         this.birthPlace = birthPlace;
         this.typeCMT = typeCMT;
+        this.goiTap = goiTap ; 
+        this.NgayDangKy = NgayDangKy ; 
+        this.NgayHetHan = NgayHetHan ;
         
     }
     
@@ -119,5 +126,32 @@ public class Residents extends Person
     public void setPhoneNumber(String phoneNumber)
     {
         this.phoneNumber = phoneNumber;
+    }
+    public String getgoitap()
+    {
+        return this.goiTap;
+    }
+    
+    public void setgoiTap (String goiTap)
+    {
+        this.goiTap  = goiTap ;
+    }
+    public Date getNgayDangKy()
+    {
+        return this.NgayDangKy;
+    }
+    
+    public void setNgayDangKy (Date  NgayDangKy)
+    {
+        this.NgayDangKy  = NgayDangKy ;
+    }
+    public Date getNgayHetHan ()
+    {
+        return this.NgayHetHan ;
+    }
+    
+    public void setNgayHetHan (Date  NgayHetHan )
+    {
+        this.NgayHetHan   = NgayHetHan  ;
     }
 }
