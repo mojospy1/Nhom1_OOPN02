@@ -1338,7 +1338,7 @@ public class ManagerView extends javax.swing.JFrame {
         }
         return true;
     }*/
-    
+    // meo simmy 
     public void showStatisticTypeSpecialPersons(List<SpecialPerson> list) {
         //tableStatistic=new JTable();
         lblTable.setText("Thống kê số lượng theo loại đối tượng");
