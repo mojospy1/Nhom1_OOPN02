@@ -47,7 +47,7 @@ public class ManagerView extends javax.swing.JFrame {
     private byte[] specialPerson_image=null;
     private byte[] image=null;
     private String [] columnNames = new String [] {
-        "STT", "Họ và tên", "Năm sinh", "Quê quán", "Ngày mở nhận việc ", "Chức vụ ", "Ảnh"};
+        "STT", "Họ và tên", "Năm sinh", "Quê quán", "Ngày nhận việc ", "Chức vụ ", "Ảnh"};
     private String [] columnNames2 = new String [] {
         "<none>","Số lượng"};
     private Object data = new Object [][] {};
