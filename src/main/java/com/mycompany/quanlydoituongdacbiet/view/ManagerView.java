@@ -47,7 +47,7 @@ public class ManagerView extends javax.swing.JFrame {
     private byte[] specialPerson_image=null;
     private byte[] image=null;
     private String [] columnNames = new String [] {
-        "STT", "Họ và tên", "Năm sinh", "Quê quán", "Ngày mở hồ sơ", "Loại đối tượng", "Ảnh"};
+        "STT", "Họ và tên", "Năm sinh", "Quê quán", "Ngày mở nhận việc ", "Chức vụ ", "Ảnh"};
     private String [] columnNames2 = new String [] {
         "<none>","Số lượng"};
     private Object data = new Object [][] {};
@@ -1212,7 +1212,7 @@ public class ManagerView extends javax.swing.JFrame {
         String type = ComboBoxType.getSelectedItem().toString().trim();
         if (type.equals("<none>")) {
             ComboBoxType.requestFocus();
-            showMessage("Bạn chưa chọn loại đối tượng");
+            showMessage("Bạn chưa chọn chức vụ  ");
             return false;
         }
         return true;
@@ -1341,8 +1341,8 @@ public class ManagerView extends javax.swing.JFrame {
     // meo simmy 
     public void showStatisticTypeSpecialPersons(List<SpecialPerson> list) {
         //tableStatistic=new JTable();
-        lblTable.setText("Thống kê số lượng theo loại đối tượng");
-        lblChart.setText("Biểu đồ thống kê số lượng theo loại đối tượng");
+        lblTable.setText("Thống kê số lượng theo chức vụ ");
+        lblChart.setText("Biểu đồ thống kê số lượng theo chức vụ ");
         chart1.clear();
         int size1 = 18;
         if (tableStatistic.getRowCount()>10){
@@ -1351,7 +1351,7 @@ public class ManagerView extends javax.swing.JFrame {
         chart1.setFont(new java.awt.Font("sansserif", 0, size1)); 
         int size = ComboBoxType.getItemCount();
         columnNames2 = new String [] {
-        "Loại đối tượng","Số lượng"};
+        "Chức vụ  ","Số lượng"};
         // với bảng tableSpecialPerson có 6 cột, 
         // khởi tạo mảng 2 chiều specialPersons, trong đó:
         // số hàng: là kích thước của list specialPerson 
