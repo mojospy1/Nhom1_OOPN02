@@ -625,7 +625,7 @@ public class ManagerView extends javax.swing.JFrame {
 
         btnSortByOpeningDate.setBackground(new java.awt.Color(51, 204, 255));
         btnSortByOpeningDate.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        btnSortByOpeningDate.setText("Sắp xếp theo ngày mở hồ sơ");
+        btnSortByOpeningDate.setText("Sắp xếp theo ngày nhận việc");
         btnSortByOpeningDate.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnSortByOpeningDate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -691,13 +691,13 @@ public class ManagerView extends javax.swing.JFrame {
         jLabel5.setBounds(870, 60, 50, 42);
 
         ComboBoxType.setFont(new java.awt.Font("Times New Roman", 0, 20)); // NOI18N
-        ComboBoxType.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "<none>", "Nghiện hút", "Xâm phạm ANQG", "Có tiền án", "Có tiền sự", "Thường xuyên đánh bạc", "Nhân thân đặc biệt", "Hay tụ tập khiếu kiện" }));
+        ComboBoxType.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "<none>", "Nhân viên dọn vệ sinh ", "PT-Nam ", "PT-Nữ ", "Quản lí ", "Nhân viên tư vấn dịch vụ ", "Nhân viên tư vấn dinh dưỡng ", "Nhân viên chăm sóc khách hàng" }));
         jPanel1.add(ComboBoxType);
         ComboBoxType.setBounds(930, 270, 260, 45);
         ComboBoxType.setOpaque(false);
 
         jLabel13.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        jLabel13.setText("Tổng số đối tượng:");
+        jLabel13.setText("Tổng số nhân viên :");
         jPanel1.add(jLabel13);
         jLabel13.setBounds(420, 50, 160, 21);
 
@@ -756,12 +756,12 @@ public class ManagerView extends javax.swing.JFrame {
         FieldSum.setEditable(false);
 
         jLabel7.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        jLabel7.setText("Ngày mở hồ sơ: (dd/MM/yyyy)");
+        jLabel7.setText("Ngày nhận việc : (dd/MM/yyyy)");
         jPanel1.add(jLabel7);
         jLabel7.setBounds(200, 270, 250, 42);
 
         jLabel6.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        jLabel6.setText("Loại đối tượng:");
+        jLabel6.setText("Chức vụ :");
         jPanel1.add(jLabel6);
         jLabel6.setBounds(790, 270, 130, 37);
 
