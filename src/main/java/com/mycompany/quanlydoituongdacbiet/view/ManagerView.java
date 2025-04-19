@@ -47,7 +47,7 @@ public class ManagerView extends javax.swing.JFrame {
     private byte[] specialPerson_image=null;
     private byte[] image=null;
     private String [] columnNames = new String [] {
-        "STT", "Họ và tên", "Năm sinh", "Quê quán", "Ngày mở hồ sơ", "Loại đối tượng", "Ảnh"};
+        "STT", "Họ và tên", "Năm sinh", "Quê quán", "Ngày mở nhận việc ", "Chức vụ ", "Ảnh"};
     private String [] columnNames2 = new String [] {
         "<none>","Số lượng"};
     private Object data = new Object [][] {};
@@ -625,7 +625,7 @@ public class ManagerView extends javax.swing.JFrame {
 
         btnSortByOpeningDate.setBackground(new java.awt.Color(51, 204, 255));
         btnSortByOpeningDate.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        btnSortByOpeningDate.setText("Sắp xếp theo ngày mở hồ sơ");
+        btnSortByOpeningDate.setText("Sắp xếp theo ngày nhận việc");
         btnSortByOpeningDate.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnSortByOpeningDate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -691,13 +691,13 @@ public class ManagerView extends javax.swing.JFrame {
         jLabel5.setBounds(870, 60, 50, 42);
 
         ComboBoxType.setFont(new java.awt.Font("Times New Roman", 0, 20)); // NOI18N
-        ComboBoxType.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "<none>", "Nghiện hút", "Xâm phạm ANQG", "Có tiền án", "Có tiền sự", "Thường xuyên đánh bạc", "Nhân thân đặc biệt", "Hay tụ tập khiếu kiện" }));
+        ComboBoxType.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "<none>", "Nhân viên dọn vệ sinh ", "PT-Nam ", "PT-Nữ ", "Quản lí ", "Nhân viên tư vấn dịch vụ ", "Nhân viên tư vấn dinh dưỡng ", "Nhân viên chăm sóc khách hàng" }));
         jPanel1.add(ComboBoxType);
         ComboBoxType.setBounds(930, 270, 260, 45);
         ComboBoxType.setOpaque(false);
 
         jLabel13.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        jLabel13.setText("Tổng số đối tượng:");
+        jLabel13.setText("Tổng số nhân viên :");
         jPanel1.add(jLabel13);
         jLabel13.setBounds(420, 50, 160, 21);
 
@@ -756,12 +756,16 @@ public class ManagerView extends javax.swing.JFrame {
         FieldSum.setEditable(false);
 
         jLabel7.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+<<<<<<< HEAD
         jLabel7.setText("Ngày đăng kí : (dd/MM/yyyy)");
+=======
+        jLabel7.setText("Ngày nhận việc : (dd/MM/yyyy)");
+>>>>>>> 7cd4d274e15336c63cc4993938d27a0d96faa1f3
         jPanel1.add(jLabel7);
         jLabel7.setBounds(200, 270, 250, 42);
 
         jLabel6.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        jLabel6.setText("Loại đối tượng:");
+        jLabel6.setText("Chức vụ :");
         jPanel1.add(jLabel6);
         jLabel6.setBounds(790, 270, 130, 37);
 
@@ -1212,7 +1216,7 @@ public class ManagerView extends javax.swing.JFrame {
         String type = ComboBoxType.getSelectedItem().toString().trim();
         if (type.equals("<none>")) {
             ComboBoxType.requestFocus();
-            showMessage("Bạn chưa chọn loại đối tượng");
+            showMessage("Bạn chưa chọn chức vụ  ");
             return false;
         }
         return true;
@@ -1338,11 +1342,11 @@ public class ManagerView extends javax.swing.JFrame {
         }
         return true;
     }*/
-    
+    // meo simmy 
     public void showStatisticTypeSpecialPersons(List<SpecialPerson> list) {
         //tableStatistic=new JTable();
-        lblTable.setText("Thống kê số lượng theo loại đối tượng");
-        lblChart.setText("Biểu đồ thống kê số lượng theo loại đối tượng");
+        lblTable.setText("Thống kê số lượng theo chức vụ ");
+        lblChart.setText("Biểu đồ thống kê số lượng theo chức vụ ");
         chart1.clear();
         int size1 = 18;
         if (tableStatistic.getRowCount()>10){
@@ -1351,7 +1355,7 @@ public class ManagerView extends javax.swing.JFrame {
         chart1.setFont(new java.awt.Font("sansserif", 0, size1)); 
         int size = ComboBoxType.getItemCount();
         columnNames2 = new String [] {
-        "Loại đối tượng","Số lượng"};
+        "Chức vụ  ","Số lượng"};
         // với bảng tableSpecialPerson có 6 cột, 
         // khởi tạo mảng 2 chiều specialPersons, trong đó:
         // số hàng: là kích thước của list specialPerson 
