@@ -58,8 +58,8 @@ public class ResidentController
         residentView.setVisible(true);
         residentView.showListResidents(residentsList);
         residentView.showCountListResidents(residentsList);
-        residentView.showStatisticTypeCMT(residentsList);
-        residentView.showStatisticIDFamily(residentsList);
+       // residentView.showStatisticTypeCMT(residentsList);
+        // residentView.showStatisticIDFamily(residentsList);
     }
     
     class UndoListener implements ActionListener 
@@ -92,8 +92,8 @@ public class ResidentController
                     residentView.showResidents(residents);
                     residentView.showListResidents(managerResidents.getListResidents());
                     residentView.showCountListResidents(managerResidents.getListResidents());
-                    residentView.showStatisticTypeCMT(managerResidents.getListResidents());
-                    residentView.showStatisticIDFamily(managerResidents.getListResidents());
+                //    residentView.showStatisticTypeCMT(managerResidents.getListResidents());
+                  //  residentView.showStatisticIDFamily(managerResidents.getListResidents());
                     residentView.showMessage("Thêm thành công!");
                 } catch (IllegalArgumentException ex) {
                     residentView.showMessage(ex.getMessage());
@@ -117,8 +117,8 @@ public class ResidentController
                 residentView.showResidents(resident);
                 residentView.showListResidents(managerResidents.getListResidents());
                 residentView.showCountListResidents(managerResidents.getListResidents());
-                residentView.showStatisticTypeCMT(managerResidents.getListResidents());
-                residentView.showStatisticIDFamily(managerResidents.getListResidents());
+           //     residentView.showStatisticTypeCMT(managerResidents.getListResidents());
+             //   residentView.showStatisticIDFamily(managerResidents.getListResidents());
                 residentView.showMessage("Cập nhật thành công!");
             }
         }
@@ -135,8 +135,8 @@ public class ResidentController
                 residentView.clearResidentInfo();
                 residentView.showListResidents(managerResidents.getListResidents());
                 residentView.showCountListResidents(managerResidents.getListResidents());
-                residentView.showStatisticTypeCMT(managerResidents.getListResidents());
-                residentView.showStatisticIDFamily(managerResidents.getListResidents());
+             //   residentView.showStatisticTypeCMT(managerResidents.getListResidents());
+               // residentView.showStatisticIDFamily(managerResidents.getListResidents());
                 residentView.showMessage("Xóa thành công!");
             }
         }

@@ -180,23 +180,18 @@ public class ResidentView extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         jLabel16 = new javax.swing.JLabel();
         btnCancelSearch = new javax.swing.JButton();
-        FieldSumCMND = new javax.swing.JTextField();
         btnSort = new javax.swing.JButton();
         btnResidentUndo = new javax.swing.JButton();
         btnSearch = new javax.swing.JButton();
         FieldSumCCCD = new javax.swing.JTextField();
         jLabel14 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
-        FieldSumFamily = new javax.swing.JTextField();
         jLabel17 = new javax.swing.JLabel();
         FieldSum = new javax.swing.JTextField();
-        jLabel15 = new javax.swing.JLabel();
         CheckBoxSortID = new javax.swing.JCheckBox();
         CheckBoxSortName = new javax.swing.JCheckBox();
         CheckBoxSortIDFamily = new javax.swing.JCheckBox();
-        FieldSumDD = new javax.swing.JTextField();
         jScrollPane1 = new javax.swing.JScrollPane();
         tableResident = new javax.swing.JTable();
         FieldCMT = new javax.swing.JTextField();
@@ -365,15 +360,6 @@ public class ResidentView extends javax.swing.JFrame {
         });
         btnCancelSearch.setEnabled(false);
 
-        FieldSumCMND.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
-        FieldSumCMND.setHorizontalAlignment(javax.swing.JTextField.LEFT);
-        FieldSumCMND.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 0, 0, new java.awt.Color(0, 51, 102)));
-        FieldSumCMND.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                FieldSumCMNDActionPerformed(evt);
-            }
-        });
-
         btnSort.setBackground(new java.awt.Color(0, 0, 102));
         btnSort.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         btnSort.setForeground(new java.awt.Color(255, 255, 255));
@@ -435,25 +421,12 @@ public class ResidentView extends javax.swing.JFrame {
         jLabel14.setOpaque(false);
 
         jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
-        jLabel3.setText("Số người có CCCD:");
-
-        jLabel12.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
-        jLabel12.setText("Tổng số hộ dân:");
+        jLabel3.setText("Hội viên có Id");
 
         jLabel13.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
-        jLabel13.setText("Số người có CMND:");
-
-        FieldSumFamily.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
-        FieldSumFamily.setHorizontalAlignment(javax.swing.JTextField.LEFT);
-        FieldSumFamily.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 0, 0, new java.awt.Color(0, 51, 102)));
-        FieldSumFamily.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                FieldSumFamilyActionPerformed(evt);
-            }
-        });
 
         jLabel17.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
-        jLabel17.setText("Tổng dân số:");
+        jLabel17.setText("Tổng số hội viên");
 
         FieldSum.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
         FieldSum.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 0, 0, new java.awt.Color(0, 51, 102)));
@@ -462,9 +435,6 @@ public class ResidentView extends javax.swing.JFrame {
                 FieldSumActionPerformed(evt);
             }
         });
-
-        jLabel15.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
-        jLabel15.setText("Số người có định danh:");
 
         CheckBoxSortID.setBackground(new java.awt.Color(0, 102, 204, 175));
         btnGroupSort.add(CheckBoxSortID);
@@ -485,19 +455,23 @@ public class ResidentView extends javax.swing.JFrame {
         CheckBoxSortIDFamily.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         CheckBoxSortIDFamily.setOpaque(false);
 
-        FieldSumDD.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
-        FieldSumDD.setHorizontalAlignment(javax.swing.JTextField.LEFT);
-        FieldSumDD.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 0, 0, new java.awt.Color(0, 51, 102)));
-        FieldSumDD.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                FieldSumDDActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(jLabel3)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(FieldSumCCCD, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(jLabel17)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(FieldSum, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
@@ -517,30 +491,6 @@ public class ResidentView extends javax.swing.JFrame {
                         .addComponent(CheckBoxSortIDFamily, javax.swing.GroupLayout.PREFERRED_SIZE, 187, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(btnSort, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnSearch, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(jLabel15)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(FieldSumDD, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE))
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(FieldSumCMND, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                                .addComponent(jLabel3)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(FieldSumCCCD, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(16, 16, 16))
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(jLabel12)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(FieldSumFamily, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(jLabel17)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(FieldSum, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                         .addComponent(btnResidentUndo, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(btnCancelSearch, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 230, Short.MAX_VALUE)))
@@ -569,37 +519,21 @@ public class ResidentView extends javax.swing.JFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel17)
                     .addComponent(FieldSum, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(FieldSumFamily, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(32, 32, 32)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(FieldSumCCCD, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(FieldSumCMND, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(FieldSumDD, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(44, 44, 44)
                 .addComponent(btnResidentUndo, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
-        FieldSumCMND.setOpaque(false);
-        FieldSumCMND.setEditable(false);
         FieldSumCCCD.setOpaque(false);
         FieldSumCCCD.setEditable(false);
-        FieldSumFamily.setOpaque(false);
-        FieldSumFamily.setEditable(false);
         FieldSum.setOpaque(false);
         FieldSum.setEditable(false);
-        FieldSumDD.setOpaque(false);
-        FieldSumDD.setEditable(false);
 
         jPanel1.add(jPanel2);
         jPanel2.setBounds(0, 0, 230, 780);
@@ -682,7 +616,7 @@ public class ResidentView extends javax.swing.JFrame {
         jLabel2.setBounds(900, 170, 70, 40);
 
         ComboBoxCMT.setFont(new java.awt.Font("Times New Roman", 0, 20)); // NOI18N
-        ComboBoxCMT.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "<none>", "CCCD", "CMND", "Định danh" }));
+        ComboBoxCMT.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "<none>", "Thẻ Tháng", "Thẻ Năm" }));
         jPanel1.add(ComboBoxCMT);
         ComboBoxCMT.setBounds(830, 250, 130, 40);
         ComboBoxRole.setOpaque(false);
@@ -888,14 +822,6 @@ public class ResidentView extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btnAddActionPerformed
 
-    private void btnSortActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSortActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnSortActionPerformed
-
-    private void btnResidentUndoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnResidentUndoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnResidentUndoActionPerformed
-
     private void btnDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnDeleteActionPerformed
@@ -903,10 +829,6 @@ public class ResidentView extends javax.swing.JFrame {
     private void btnClearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClearActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnClearActionPerformed
-
-    private void btnSearchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSearchActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnSearchActionPerformed
 
     private void btnEditActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditActionPerformed
         // TODO add your handling code here:
@@ -940,33 +862,9 @@ public class ResidentView extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_FieldPhoneActionPerformed
 
-    private void FieldSumActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FieldSumActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_FieldSumActionPerformed
-
     private void FieldIDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FieldIDActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_FieldIDActionPerformed
-
-    private void btnCancelSearchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelSearchActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnCancelSearchActionPerformed
-
-    private void FieldSumFamilyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FieldSumFamilyActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_FieldSumFamilyActionPerformed
-
-    private void FieldSumCCCDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FieldSumCCCDActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_FieldSumCCCDActionPerformed
-
-    private void FieldSumCMNDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FieldSumCMNDActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_FieldSumCMNDActionPerformed
-
-    private void FieldSumDDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FieldSumDDActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_FieldSumDDActionPerformed
 
     private void CheckBoxNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CheckBoxNameActionPerformed
         // TODO add your handling code here:
@@ -979,6 +877,30 @@ public class ResidentView extends javax.swing.JFrame {
     private void CheckBoxAddressActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CheckBoxAddressActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_CheckBoxAddressActionPerformed
+
+    private void FieldSumActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FieldSumActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_FieldSumActionPerformed
+
+    private void FieldSumCCCDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FieldSumCCCDActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_FieldSumCCCDActionPerformed
+
+    private void btnSearchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSearchActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnSearchActionPerformed
+
+    private void btnResidentUndoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnResidentUndoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnResidentUndoActionPerformed
+
+    private void btnSortActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSortActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnSortActionPerformed
+
+    private void btnCancelSearchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelSearchActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCancelSearchActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1067,12 +989,12 @@ public class ResidentView extends javax.swing.JFrame {
         try {
             String idText = FieldIDFamily.getText().trim();
             if (idText.isEmpty() || !idText.matches("\\d+")) {
-                showMessage("Số hộ khẩu không hợp lệ");
+                showMessage("Số Id không hợp lệ");
                 return false;
             }
         } catch (Exception e) {
             FieldIDFamily.requestFocus();
-            showMessage("Số hộ khẩu không được trống");
+            showMessage("Số Id không được bỏ trống");
             return false;
         }
         return true;
@@ -1082,12 +1004,12 @@ public class ResidentView extends javax.swing.JFrame {
         try {
             String idText = FieldCMT.getText().trim();
             if (idText.isEmpty() || !idText.matches("\\d+")) {
-                showMessage("Số chứng minh thư không hợp lệ");
+                showMessage("Số Id không hợp lệ");
                 return false;
             }
         } catch (Exception e) {
             FieldCMT.requestFocus();
-            showMessage("Số chứng minh thư không được trống");
+            showMessage("Số Id không được bỏ trống");
             return false;
         }
         return true;
@@ -1115,7 +1037,7 @@ public class ResidentView extends javax.swing.JFrame {
         String type = ComboBoxCMT.getSelectedItem().toString().trim();
         if (type.equals("<none>")) {
             ComboBoxCMT.requestFocus();
-            showMessage("Bạn chưa chọn loại chứng minh thư");
+            showMessage("Bạn chưa chọn loại thẻ tập");
             return false;
         }
         return true;
@@ -1308,7 +1230,7 @@ public class ResidentView extends javax.swing.JFrame {
         return 0;
     }
     
-    public void showStatisticTypeCMT(List<Residents> list) {
+  /*  public void showStatisticTypeCMT(List<Residents> list) {
         Map<String, Integer> countMap = new HashMap<>();
         for (Residents person : list) {
             if (countMap.containsKey(person.getTypeCMT())) {
@@ -1339,7 +1261,7 @@ public class ResidentView extends javax.swing.JFrame {
         }
     }
     
-    public void showStatisticIDFamily(List<Residents> list) {
+   public void showStatisticIDFamily(List<Residents> list) {
         Map<String, Integer> countMapIDFamily = new HashMap<>();
 
         for (Residents person : list) {
@@ -1355,7 +1277,7 @@ public class ResidentView extends javax.swing.JFrame {
         // Gán giá trị thống kê số hộ khẩu IDFamily
         FieldSumFamily.setText(String.valueOf(countMapIDFamily.size()));
     }
-    
+    */
     
     public void searchResidentInfo() {
         //FrameSearch = new ManagerView();
@@ -1479,9 +1401,6 @@ public class ResidentView extends javax.swing.JFrame {
     private javax.swing.JTextField FieldSearch;
     private javax.swing.JTextField FieldSum;
     private javax.swing.JTextField FieldSumCCCD;
-    private javax.swing.JTextField FieldSumCMND;
-    private javax.swing.JTextField FieldSumDD;
-    private javax.swing.JTextField FieldSumFamily;
     private javax.swing.JDialog SearchDialog;
     private javax.swing.JTextArea TextAreaAddress;
     private javax.swing.JButton btnAdd;
@@ -1500,10 +1419,8 @@ public class ResidentView extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;

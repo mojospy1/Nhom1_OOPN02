@@ -756,7 +756,7 @@ public class ManagerView extends javax.swing.JFrame {
         FieldSum.setEditable(false);
 
         jLabel7.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        jLabel7.setText("Ngày mở hồ sơ: (dd/MM/yyyy)");
+        jLabel7.setText("Ngày đăng kí : (dd/MM/yyyy)");
         jPanel1.add(jLabel7);
         jLabel7.setBounds(200, 270, 250, 42);
 
