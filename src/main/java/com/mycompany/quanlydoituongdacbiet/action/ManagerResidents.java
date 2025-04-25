@@ -114,7 +114,7 @@ public class ManagerResidents
         listResidents.add(resident);
         writeListResidents(listResidents);
     }
-    
+    // .
     /*public boolean validateAdd(Residents resident) {
         try {
             // Kiểm tra số CMT không trùng
