@@ -865,7 +865,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="16" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="S&#x1eaf;p x&#x1ebf;p theo ID"/>
+            <Property name="text" type="java.lang.String" value="S&#x1eaf;p x&#x1ebf;p theo mnv"/>
             <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
               <Color id="Hand Cursor"/>
             </Property>
@@ -901,7 +901,7 @@
               <Font name="Times New Roman" size="20" style="0"/>
             </Property>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
-              <Connection code="new javax.swing.DefaultComboBoxModel&lt;&gt;(new String[] { &quot;&lt;none&gt;&quot;, &quot;Nh&#xe2;n vi&#xea;n d&#x1ecd;n v&#x1ec7; sinh &quot;, &quot;PT-Nam &quot;, &quot;PT-N&#x1eef; &quot;, &quot;Qu&#x1ea3;n l&#xed; &quot;, &quot;Nh&#xe2;n vi&#xea;n t&#x1b0; v&#x1ea5;n d&#x1ecb;ch v&#x1ee5; &quot;, &quot;Nh&#xe2;n vi&#xea;n t&#x1b0; v&#x1ea5;n dinh d&#x1b0;&#x1ee1;ng &quot;, &quot;Nh&#xe2;n vi&#xea;n ch&#x103;m s&#xf3;c kh&#xe1;ch h&#xe0;ng&quot; })" type="code"/>
+              <Connection code="new javax.swing.DefaultComboBoxModel&lt;&gt;(new String[] { &quot;&lt;none&gt;&quot;, &quot;Hu&#x1ea5;n luy&#x1ec7;n vi&#xea;n&quot;, &quot;Qu&#x1ea3;n l&#xed;&quot;, &quot;L&#x1ec5; t&#xe2;n&quot;, &quot;V&#x1ec7; sinh&quot;, &quot;B&#x1ea3;o v&#x1ec7;&quot;, &quot;Ch&#x103;m s&#xf3;c kh&#xe1;ch h&#xe0;ng&quot;, &quot;T&#x1b0; v&#x1ea5;n dinh d&#x1b0;&#x1ee1;ng&quot; })" type="code"/>
             </Property>
           </Properties>
           <AuxValues>
@@ -919,11 +919,11 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="18" style="1"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="T&#x1ed5;ng s&#x1ed1; nh&#xe2;n vi&#xea;n :"/>
+            <Property name="text" type="java.lang.String" value="T&#x1ed5;ng s&#x1ed1; &#x111;&#x1ed1;i t&#x1b0;&#x1ee3;ng:"/>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="420" y="50" width="160" height="-1"/>
+              <AbsoluteConstraints x="450" y="50" width="160" height="-1"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -1053,7 +1053,7 @@
           </AuxValues>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="580" y="40" width="70" height="40"/>
+              <AbsoluteConstraints x="600" y="40" width="70" height="40"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -1062,11 +1062,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="18" style="1"/>
             </Property>
-<<<<<<< HEAD
-            <Property name="text" type="java.lang.String" value="Ng&#xe0;y &#x111;&#x103;ng k&#xed; : (dd/MM/yyyy)"/>
-=======
-            <Property name="text" type="java.lang.String" value="Ng&#xe0;y nh&#x1ead;n vi&#x1ec7;c : (dd/MM/yyyy)"/>
->>>>>>> 7cd4d274e15336c63cc4993938d27a0d96faa1f3
+            <Property name="text" type="java.lang.String" value="Ng&#xe0;y nh&#x1ead;n vi&#x1ec7;c: (dd/MM/yyyy)"/>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -1079,7 +1075,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="18" style="1"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Ch&#x1ee9;c v&#x1ee5; :"/>
+            <Property name="text" type="java.lang.String" value="Ch&#x1ee9;c v&#x1ee5;:"/>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -1149,11 +1145,11 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="18" style="1"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="ID:"/>
+            <Property name="text" type="java.lang.String" value="M&#xe3; nh&#xe2;n vi&#xea;n:"/>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="200" y="50" width="60" height="-1"/>
+              <AbsoluteConstraints x="200" y="50" width="120" height="-1"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -1247,7 +1243,7 @@
           </AuxValues>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="260" y="38" width="70" height="40"/>
+              <AbsoluteConstraints x="320" y="40" width="120" height="40"/>
             </Constraint>
           </Constraints>
         </Component>

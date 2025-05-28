@@ -674,7 +674,7 @@ public class ManagerView extends javax.swing.JFrame {
 
         btnSortByID.setBackground(new java.awt.Color(51, 204, 255));
         btnSortByID.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        btnSortByID.setText("Sắp xếp theo ID");
+        btnSortByID.setText("Sắp xếp theo mnv");
         btnSortByID.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnSortByID.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -691,15 +691,15 @@ public class ManagerView extends javax.swing.JFrame {
         jLabel5.setBounds(870, 60, 50, 42);
 
         ComboBoxType.setFont(new java.awt.Font("Times New Roman", 0, 20)); // NOI18N
-        ComboBoxType.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "<none>", "Nhân viên dọn vệ sinh ", "PT-Nam ", "PT-Nữ ", "Quản lí ", "Nhân viên tư vấn dịch vụ ", "Nhân viên tư vấn dinh dưỡng ", "Nhân viên chăm sóc khách hàng" }));
+        ComboBoxType.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "<none>", "Huấn luyện viên", "Quản lí", "Lễ tân", "Vệ sinh", "Bảo vệ", "Chăm sóc khách hàng", "Tư vấn dinh dưỡng" }));
         jPanel1.add(ComboBoxType);
         ComboBoxType.setBounds(930, 270, 260, 45);
         ComboBoxType.setOpaque(false);
 
         jLabel13.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        jLabel13.setText("Tổng số nhân viên :");
+        jLabel13.setText("Tổng số đối tượng:");
         jPanel1.add(jLabel13);
-        jLabel13.setBounds(420, 50, 160, 21);
+        jLabel13.setBounds(450, 50, 160, 21);
 
         btnImage.setBackground(new java.awt.Color(255, 255, 255, 0));
         btnImage.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
@@ -751,19 +751,17 @@ public class ManagerView extends javax.swing.JFrame {
             }
         });
         jPanel1.add(FieldSum);
-        FieldSum.setBounds(580, 40, 70, 40);
+        FieldSum.setBounds(600, 40, 70, 40);
         FieldSum.setOpaque(false);
         FieldSum.setEditable(false);
 
         jLabel7.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-
-        jLabel7.setText("Ngày nhận việc : (dd/MM/yyyy)");
-
+        jLabel7.setText("Ngày nhận việc: (dd/MM/yyyy)");
         jPanel1.add(jLabel7);
         jLabel7.setBounds(200, 270, 250, 42);
 
         jLabel6.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        jLabel6.setText("Chức vụ :");
+        jLabel6.setText("Chức vụ:");
         jPanel1.add(jLabel6);
         jLabel6.setBounds(790, 270, 130, 37);
 
@@ -789,9 +787,9 @@ public class ManagerView extends javax.swing.JFrame {
         FieldName.setOpaque(false);
 
         jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        jLabel2.setText("ID:");
+        jLabel2.setText("Mã nhân viên:");
         jPanel1.add(jLabel2);
-        jLabel2.setBounds(200, 50, 60, 21);
+        jLabel2.setBounds(200, 50, 120, 21);
 
         jScrollPane1.setBackground(new java.awt.Color(0, 51, 153, 125));
 
@@ -841,7 +839,7 @@ public class ManagerView extends javax.swing.JFrame {
             }
         });
         jPanel1.add(FieldID);
-        FieldID.setBounds(260, 38, 70, 40);
+        FieldID.setBounds(320, 40, 120, 40);
         FieldID.setOpaque(false);
 
         jLabel9.setIcon(new ImageIcon("src/main/java/com/mycompany/quanlydoituongdacbiet/view/Lovepik_com-500330964-blue-blazed-background.jpg"));
