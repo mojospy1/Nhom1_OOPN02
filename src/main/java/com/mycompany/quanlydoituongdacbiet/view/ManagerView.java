@@ -47,7 +47,7 @@ public class ManagerView extends javax.swing.JFrame {
     private byte[] specialPerson_image=null;
     private byte[] image=null;
     private String [] columnNames = new String [] {
-        "STT", "Họ và tên", "Năm sinh", "Quê quán", "Ngày nhận việc ", "Chức vụ ", "Ảnh"};
+        "MNV", "Họ và tên", "Năm sinh", "Quê quán", "Ngày nhận việc ", "Chức vụ ", "Ảnh"};
     private String [] columnNames2 = new String [] {
         "<none>","Số lượng"};
     private Object data = new Object [][] {};
@@ -697,7 +697,7 @@ public class ManagerView extends javax.swing.JFrame {
         ComboBoxType.setOpaque(false);
 
         jLabel13.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        jLabel13.setText("Tổng số đối tượng:");
+        jLabel13.setText("Tổng số nhân viên:");
         jPanel1.add(jLabel13);
         jLabel13.setBounds(450, 50, 160, 21);
 
