@@ -5,7 +5,7 @@
 package com.mycompany.quanlydoituongdacbiet.controller;
 
 import com.mycompany.quanlydoituongdacbiet.action.ManagerSpecialPerson;
-import com.mycompany.quanlydoituongdacbiet.entity.SpecialPerson;
+import com.mycompany.quanlydoituongdacbiet.entity.Employees;
 import com.mycompany.quanlydoituongdacbiet.view.LoginView;
 import com.mycompany.quanlydoituongdacbiet.view.MainView;
 import com.mycompany.quanlydoituongdacbiet.view.ManagerView;

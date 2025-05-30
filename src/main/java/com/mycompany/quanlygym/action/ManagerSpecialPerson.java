@@ -4,8 +4,8 @@
  */
 package com.mycompany.quanlydoituongdacbiet.action;
 
-import com.mycompany.quanlydoituongdacbiet.entity.SpecialPerson;
-import com.mycompany.quanlydoituongdacbiet.entity.SpecialPersonXML;
+import com.mycompany.quanlydoituongdacbiet.entity.Employees;
+import com.mycompany.quanlydoituongdacbiet.entity.EmployeesXML;
 import com.mycompany.quanlydoituongdacbiet.utils.FileUtils;
 import com.mycompany.quanlydoituongdacbiet.view.ManagerView;
 import java.text.Collator;
@@ -24,11 +24,11 @@ import java.util.Locale;
 public class ManagerSpecialPerson 
 {
     private static final String SPECIALPERSON_FILE_NAME = "SpecialPerson.xml";
-    private List<SpecialPerson> listSpecialPersons;
+    private List<Employees> listSpecialPersons;
     public ManagerSpecialPerson() {
         this.listSpecialPersons = readListSpecialPersons();
         if (listSpecialPersons == null) {
-            listSpecialPersons = new ArrayList<SpecialPerson>();
+            listSpecialPersons = new ArrayList<Employees>();
         }
     }
 
@@ -37,9 +37,9 @@ public class ManagerSpecialPerson
      * 
      * @param specialPersons
      */
-    public void writeListSpecialPersons(List<SpecialPerson> specialPersons) 
+    public void writeListSpecialPersons(List<Employees> specialPersons) 
     {
-        SpecialPersonXML specialPersonXML = new SpecialPersonXML();
+        EmployeesXML specialPersonXML = new EmployeesXML();
         specialPersonXML.setSpecialPerson(specialPersons);
         FileUtils.writeXMLtoFile(SPECIALPERSON_FILE_NAME, specialPersonXML);
     }
@@ -49,11 +49,10 @@ public class ManagerSpecialPerson
      * 
      * @return list SpecialPerson
      */
-    public List<SpecialPerson> readListSpecialPersons() 
+    public List<Employees> readListSpecialPersons() 
     {
-        List<SpecialPerson> list = new ArrayList<SpecialPerson>();
-        SpecialPersonXML specialPersonXML = (SpecialPersonXML) FileUtils.readXMLFile(
-                SPECIALPERSON_FILE_NAME, SpecialPersonXML.class);
+        List<Employees> list = new ArrayList<Employees>();
+        EmployeesXML specialPersonXML = (EmployeesXML) FileUtils.readXMLFile(SPECIALPERSON_FILE_NAME, EmployeesXML.class);
         if (specialPersonXML != null) 
         {
             list = specialPersonXML.getSpecialPerson();
@@ -62,9 +61,9 @@ public class ManagerSpecialPerson
     }
     
     /* Hiển thị listSpecialPersons theo tên */
-    public List<SpecialPerson> searchSpecialPersonName(String search){
-        List<SpecialPerson>temp = new ArrayList<SpecialPerson>();
-        for(SpecialPerson person : listSpecialPersons){
+    public List<Employees> searchSpecialPersonName(String search){
+        List<Employees>temp = new ArrayList<Employees>();
+        for(Employees person : listSpecialPersons){
             if(person.getName().toLowerCase().contains(search.toLowerCase())){
                 temp.add(person);
             }
@@ -73,9 +72,9 @@ public class ManagerSpecialPerson
     }
     
     /* Hiển thị listSpecialPersons theo nơi ở */
-    public List<SpecialPerson> searchSpecialPersonAddress(String search){
-        List<SpecialPerson>temp = new ArrayList<SpecialPerson>();
-        for(SpecialPerson person : listSpecialPersons){
+    public List<Employees> searchSpecialPersonAddress(String search){
+        List<Employees>temp = new ArrayList<Employees>();
+        for(Employees person : listSpecialPersons){
             if(person.getAddress().toLowerCase().contains(search.toLowerCase())){
                 temp.add(person);
             }
@@ -83,11 +82,11 @@ public class ManagerSpecialPerson
         return temp;
     }
      /* Hiển thị listSpecialPersons theo năm sinh */
-    public List<SpecialPerson> searchSpecialPersonYear(String year) {
-        List<SpecialPerson> temp = new ArrayList<>();
+    public List<Employees> searchSpecialPersonYear(String year) {
+        List<Employees> temp = new ArrayList<>();
         SimpleDateFormat yearFormat = new SimpleDateFormat("yyyy");
 
-        for (SpecialPerson person : listSpecialPersons) {
+        for (Employees person : listSpecialPersons) {
             // Chuyển đổi ngày sinh thành chuỗi năm
             String personYearStr = yearFormat.format(person.getBirthday());
 
@@ -105,7 +104,7 @@ public class ManagerSpecialPerson
      * 
      * @param SpecialPerson
      */
-    public void add(SpecialPerson specialPerson) 
+    public void add(Employees specialPerson) 
     {
         int max = 0;
         for (int i=0;i<listSpecialPersons.size();i++)
@@ -122,7 +121,7 @@ public class ManagerSpecialPerson
      * 
      * @param SpecialPerson
      */
-    public void edit(SpecialPerson specialPerson) throws ParseException 
+    public void edit(Employees specialPerson) throws ParseException 
     {
         SimpleDateFormat fDate=new SimpleDateFormat("dd/MM/yyyy");
         int size = listSpecialPersons.size();
@@ -148,12 +147,12 @@ public class ManagerSpecialPerson
      * @param SpecialPerson
      */
     
-    public void image(SpecialPerson specialPerson) 
+    public void image(Employees specialPerson) 
     {
         
     }
       
-    public boolean delete(SpecialPerson specialPerson) {
+    public boolean delete(Employees specialPerson) {
          boolean isFound = false;
         int size = listSpecialPersons.size();
         for (int i = 0; i < size; i++) 
@@ -183,8 +182,8 @@ public class ManagerSpecialPerson
     
     public void sortSpecialPersonByName() 
     {
-        Collections.sort(listSpecialPersons, new Comparator<SpecialPerson>() {
-            public int compare(SpecialPerson p1, SpecialPerson p2) {
+        Collections.sort(listSpecialPersons, new Comparator<Employees>() {
+            public int compare(Employees p1, Employees p2) {
                 Collator collator = Collator.getInstance(new Locale("vi", "VN"));
                 // So sánh tên
                 int result = collator.compare(p1.getLastName(), p2.getLastName());
@@ -200,9 +199,9 @@ public class ManagerSpecialPerson
     
     public void sortSpecialPersonByID() 
     {
-        Collections.sort(listSpecialPersons, new Comparator<SpecialPerson>() 
+        Collections.sort(listSpecialPersons, new Comparator<Employees>() 
         {
-            public int compare(SpecialPerson SpecialPerson1, SpecialPerson SpecialPerson2) 
+            public int compare(Employees SpecialPerson1, Employees SpecialPerson2) 
             {
                 if (SpecialPerson1.getId() > SpecialPerson2.getId()) 
                 {
@@ -215,9 +214,9 @@ public class ManagerSpecialPerson
     
     public void sortSpecialPersonByOpeningDate() 
     {
-        Collections.sort(listSpecialPersons, new Comparator<SpecialPerson>() 
+        Collections.sort(listSpecialPersons, new Comparator<Employees>() 
         {
-            public int compare(SpecialPerson SpecialPerson1, SpecialPerson SpecialPerson2) 
+            public int compare(Employees SpecialPerson1, Employees SpecialPerson2) 
             {
                 return SpecialPerson1.getOpeningDate().compareTo(SpecialPerson2.getOpeningDate());
             }
@@ -228,19 +227,19 @@ public class ManagerSpecialPerson
      * sắp xếp danh sách SpecialPerson theo năm sinh theo tứ tự tăng dần
      */
     public void sortSpecialPersonByBirthDay() {
-        Collections.sort(listSpecialPersons, new Comparator<SpecialPerson>() {
-            public int compare(SpecialPerson person1, SpecialPerson person2) {
+        Collections.sort(listSpecialPersons, new Comparator<Employees>() {
+            public int compare(Employees person1, Employees person2) {
                 return person1.getBirthday().compareTo(person2.getBirthday());
             }
         });
     }
 
-    public List<SpecialPerson> getListSpecialPersons() 
+    public List<Employees> getListSpecialPersons() 
     {
         return listSpecialPersons;
     }
 
-    public void setListSpecialPersons(List<SpecialPerson> listSpecialPersons) 
+    public void setListSpecialPersons(List<Employees> listSpecialPersons) 
     {
         this.listSpecialPersons = listSpecialPersons;
     }

@@ -5,7 +5,7 @@
 package com.mycompany.quanlydoituongdacbiet.controller;
 
 import com.mycompany.quanlydoituongdacbiet.action.ManagerSpecialPerson;
-import com.mycompany.quanlydoituongdacbiet.entity.SpecialPerson;
+import com.mycompany.quanlydoituongdacbiet.entity.Employees;
 import com.mycompany.quanlydoituongdacbiet.view.LoginView;
 import com.mycompany.quanlydoituongdacbiet.view.MainView;
 import com.mycompany.quanlydoituongdacbiet.view.ManagerView;
@@ -65,7 +65,7 @@ public class SpecialPersonController
 
     public void showManagerView() 
     {
-        List<SpecialPerson> specialPersonList = managerSpecialPerson.getListSpecialPersons();
+        List<Employees> specialPersonList = managerSpecialPerson.getListSpecialPersons();
         specialPersonView.setVisible(true);
         specialPersonView.showListSpecialPersons(specialPersonList);
         specialPersonView.showCountListSpecialPersons(specialPersonList);
@@ -75,7 +75,7 @@ public class SpecialPersonController
     {
         public void actionPerformed(ActionEvent e) 
         {
-            SpecialPerson specialPerson = specialPersonView.getSpecialPersonInfo();
+            Employees specialPerson = specialPersonView.getSpecialPersonInfo();
             if (specialPerson != null) 
             {
                 managerSpecialPerson.add(specialPerson);
@@ -91,7 +91,7 @@ public class SpecialPersonController
     {
         public void actionPerformed(ActionEvent e) 
         {
-            SpecialPerson specialPerson = specialPersonView.getSpecialPersonInfo();
+            Employees specialPerson = specialPersonView.getSpecialPersonInfo();
             if (specialPerson != null) 
             {
                 try {
@@ -111,7 +111,7 @@ public class SpecialPersonController
     {
         public void actionPerformed(ActionEvent e) 
         {
-            SpecialPerson specialPerson = specialPersonView.getSpecialPersonInfo();
+            Employees specialPerson = specialPersonView.getSpecialPersonInfo();
             if (specialPerson != null) 
             {
                 managerSpecialPerson.delete(specialPerson);
@@ -212,7 +212,7 @@ public class SpecialPersonController
     class SearchSpecialPersonListener implements ActionListener{
         public void actionPerformed(ActionEvent e){
             boolean kt = false;
-            List<SpecialPerson> temp = new ArrayList<>();
+            List<Employees> temp = new ArrayList<>();
             int check = specialPersonView.getChooseSelectSearch();
             String search = specialPersonView.validateSearch();
             if(check == 1){

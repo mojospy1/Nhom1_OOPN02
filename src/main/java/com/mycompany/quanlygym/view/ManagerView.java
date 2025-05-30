@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package com.mycompany.quanlydoituongdacbiet.view;
-import com.mycompany.quanlydoituongdacbiet.entity.SpecialPerson;
+import com.mycompany.quanlydoituongdacbiet.entity.Employees;
 import com.raven.chart.Chart;
 import com.raven.chart.ModelChart;
 import java.awt.event.ActionListener;
@@ -1048,7 +1048,7 @@ public class ManagerView extends javax.swing.JFrame {
      * 
      * @param list
      */
-    public void showListSpecialPersons(List<SpecialPerson> list) {
+    public void showListSpecialPersons(List<Employees> list) {
         int size = list.size();
         // với bảng tableSpecialPerson có 6 cột, 
         // khởi tạo mảng 2 chiều specialPersons, trong đó:
@@ -1070,7 +1070,7 @@ public class ManagerView extends javax.swing.JFrame {
         tableSpecialPerson.removeColumn(tableSpecialPerson.getColumnModel().getColumn(6));
     }
     
-    public void showCountListSpecialPersons(List<SpecialPerson> list) {
+    public void showCountListSpecialPersons(List<Employees> list) {
         int size = list.size();
         FieldSum.setText(String.valueOf(size));
     }
@@ -1151,7 +1151,7 @@ public class ManagerView extends javax.swing.JFrame {
      * 
      * @param specialPerson
      */
-    public void showSpecialPerson(SpecialPerson specialPerson) 
+    public void showSpecialPerson(Employees specialPerson) 
     {
         FieldID.setText("" + specialPerson.getId());
         FieldName.setText(specialPerson.getName());
@@ -1175,13 +1175,13 @@ public class ManagerView extends javax.swing.JFrame {
      * 
      * @return
      */
-    public SpecialPerson getSpecialPersonInfo() {
+    public Employees getSpecialPersonInfo() {
         // validate specialPerson
         if (!validateName() || !validateYear() || !validateAddress() || !validateImage() || !validateOpeningDate() || !validateType()) {
             return null;
         }
         try {
-            SpecialPerson specialPerson = new SpecialPerson();
+            Employees specialPerson = new Employees();
             if (FieldID.getText() != null && !"".equals(FieldID.getText())) {
                 specialPerson.setId(Integer.parseInt(FieldID.getText()));
             }
@@ -1339,7 +1339,7 @@ public class ManagerView extends javax.swing.JFrame {
         return true;
     }*/
     // meo simmy 
-    public void showStatisticTypeSpecialPersons(List<SpecialPerson> list) {
+    public void showStatisticTypeSpecialPersons(List<Employees> list) {
         //tableStatistic=new JTable();
         lblTable.setText("Thống kê số lượng theo chức vụ ");
         lblChart.setText("Biểu đồ thống kê số lượng theo chức vụ ");
@@ -1357,7 +1357,7 @@ public class ManagerView extends javax.swing.JFrame {
         // số hàng: là kích thước của list specialPerson 
         // số cột: là 7
         Map<String, Integer> countMap = new HashMap<>();
-        for (SpecialPerson person : list) {
+        for (Employees person : list) {
             if (countMap.containsKey(person.getType())) {
                 int count = countMap.get(person.getType());
                 countMap.put(person.getType(), count + 1);
@@ -1378,7 +1378,7 @@ public class ManagerView extends javax.swing.JFrame {
         chart1.start();
     }
     
-    public void showStatisticAgeSpecialPersons(List<SpecialPerson> list) {
+    public void showStatisticAgeSpecialPersons(List<Employees> list) {
         java.util.Date referenceDate=new java.util.Date();
         //tableStatistic=new JTable();
         lblTable.setText("Thống kê số lượng theo tuổi");
@@ -1394,7 +1394,7 @@ public class ManagerView extends javax.swing.JFrame {
         int size = ComboBoxType.getItemCount();
         columnNames2 = new String[]{"Tuổi", "Số lượng"};
         Map<Integer, Integer> countMap = new HashMap<>();
-        for (SpecialPerson person : list) {
+        for (Employees person : list) {
             int age = calculateAge(person.getBirthday(), referenceDate);
             if (countMap.containsKey(age)) {
                 int count = countMap.get(age);

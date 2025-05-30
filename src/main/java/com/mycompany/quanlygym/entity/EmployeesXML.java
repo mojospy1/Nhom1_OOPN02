@@ -8,15 +8,15 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement(name = "SpecialPersons")
 @XmlAccessorType(XmlAccessType.FIELD)
-public class SpecialPersonXML {
+public class EmployeesXML {
     
-    private List<SpecialPerson> specialPerson;
+    private List<Employees> specialPerson;
 
-    public List<SpecialPerson> getSpecialPerson() {
+    public List<Employees> getSpecialPerson() {
         return specialPerson;
     }
 
-    public void setSpecialPerson(List<SpecialPerson> specialPerson) {
+    public void setSpecialPerson(List<Employees> specialPerson) {
         this.specialPerson = specialPerson;
     }
 }

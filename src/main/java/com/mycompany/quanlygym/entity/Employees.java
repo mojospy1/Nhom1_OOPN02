@@ -20,7 +20,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement(name = "SpecialPerson")
 @XmlAccessorType(XmlAccessType.FIELD)
-public class SpecialPerson extends Person implements Serializable
+public class Employees extends Person implements Serializable
 {
     private static final long serialVersionUID = 1L;
    // private int id;
@@ -31,11 +31,11 @@ public class SpecialPerson extends Person implements Serializable
     private String type;
     private byte[] picture;
     //private SimpleDateFormat fDate=new SimpleDateFormat("dd/MM/yyyy");
-    public SpecialPerson() 
+    public Employees() 
     {
         
     }
-    public SpecialPerson(int id, String name, Date birthday, String address, String OpeningDate, String type, byte[] image) throws ParseException 
+    public Employees(int id, String name, Date birthday, String address, String OpeningDate, String type, byte[] image) throws ParseException 
     {
         super();
         SimpleDateFormat fDate=new SimpleDateFormat("dd/MM/yyyy");
