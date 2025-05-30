@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package com.mycompany.quanlydoituongdacbiet.view;
-import com.mycompany.quanlydoituongdacbiet.entity.Residents;
+import com.mycompany.quanlydoituongdacbiet.entity.GymMember;
 import com.raven.chart.Chart;
 import com.raven.chart.ModelChart;
 import java.awt.event.ActionListener;
@@ -36,22 +36,22 @@ import javax.swing.table.TableColumnModel;
  *
  * @author PC
  */
-public class ResidentView extends javax.swing.JFrame {
+public class GymMemberView extends javax.swing.JFrame {
 
     /**
      * Creates new form ResidentView
      */
     private String [] columnNames = new String [] {
-        "STT", "Số hộ khẩu", "Địa chỉ", "Vai trò", "Họ và tên", "Ngày sinh", "Liên hệ"};
+         "STT", "ID hội viên", "Phòng tập", "Vai trò", "Họ và tên", "Ngày sinh",  "Liên hệ"};
     private SimpleDateFormat fDate=new SimpleDateFormat("dd/MM/yyyy");
     FlowLayout flowLayout = new FlowLayout();
-    public ResidentView() {
+    public GymMemberView() {
         initComponents();
         btnAdd.setEnabled(true);
         btnEdit.setEnabled(false);
         btnDelete.setEnabled(false);
         btnSearch.setEnabled(true);
-        tableResident.setDefaultRenderer(Object.class, new ResidentView.MyRenderer());
+        tableResident.setDefaultRenderer(Object.class, new GymMemberView.MyRenderer());
     }
     
     private static Image getCircleImage(Image image) {
@@ -589,7 +589,7 @@ public class ResidentView extends javax.swing.JFrame {
         FieldName.setOpaque(false);
 
         ComboBoxRole.setFont(new java.awt.Font("Times New Roman", 0, 20)); // NOI18N
-        ComboBoxRole.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "<none>", "Chủ hộ", "Vợ", "Chồng", "Con", "Bố", "Mẹ", "Người thân khác" }));
+        ComboBoxRole.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "<none>", "Quản Lý", "Lễ Tân", "Huấn Luyện Viên", "Nhân viên vệ sinh","Học viên"}));
         jPanel1.add(ComboBoxRole);
         ComboBoxRole.setBounds(970, 100, 260, 40);
         ComboBoxRole.setOpaque(false);
@@ -802,7 +802,7 @@ public class ResidentView extends javax.swing.JFrame {
         jLabel9.setIcon(new ImageIcon("src/main/java/com/mycompany/quanlydoituongdacbiet/view/Lovepik_com-500330964-blue-blazed-background.jpg"));
         jLabel9.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel1.add(jLabel9);
-        jLabel9.setBounds(-30, 0, 1640, 890);
+        jLabel9.setBounds(-130, -20, 1640, 890);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -919,20 +919,27 @@ public class ResidentView extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(ResidentView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GymMemberView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(ResidentView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GymMemberView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(ResidentView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GymMemberView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(ResidentView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GymMemberView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new ResidentView().setVisible(true);
+                new GymMemberView().setVisible(true);
             }
         });
     }
@@ -941,25 +948,25 @@ public class ResidentView extends javax.swing.JFrame {
         JOptionPane.showMessageDialog(this, message);
     }
     
-    public Residents getResidentInfo() {
+    public GymMember getMemberInfo() {
         // validate residents
-        if (!validateIDFamily() || !validateName() || !validateSex() || !validateBirthday() || !validateAddress() || !validateTypeCMT() || !validateCMT()) {
+        if (  !validateName() || !validateSex() || !validateBirthday() || !validateAddress() || !validateTypeCMT() || !validateIDCard()) {
             return null;
         }
         try {
-            Residents residents = new Residents();
+            GymMember residents = new GymMember();
             if (FieldID.getText() != null && !"".equals(FieldID.getText())) {
                 residents.setId(Integer.parseInt(FieldID.getText()));
             }
             if (CheckBoxMale.isSelected()) residents.setSex("Nam"); else residents.setSex("Nữ");
-            residents.setIDFamily(FieldIDFamily.getText().trim());
+          //  residents.setIDFamily(FieldIDFamily.getText().trim());
             residents.setRole(ComboBoxRole.getSelectedItem().toString().trim());
             residents.setName(capitalizeWords(FieldName.getText().trim()));
             //residents.setYear(Integer.parseInt(FieldYear.getText().trim()));
             residents.setAddress(capitalizeWords(TextAreaAddress.getText().trim()));
             residents.setBirthday(BirthdayChooser.getDate());
-            residents.setTypeCMT(ComboBoxCMT.getSelectedItem().toString().trim());
-            residents.setCMT(FieldCMT.getText().trim());
+            residents.setIDCardType(ComboBoxCMT.getSelectedItem().toString().trim());
+            residents.setIDCard(FieldCMT.getText().trim());
             residents.setBirthPlace(capitalizeWords(FieldBirthPlace.getText().trim()));
             residents.setPhoneNumber(FieldPhone.getText().trim());           
             return residents;
@@ -985,7 +992,7 @@ public class ResidentView extends javax.swing.JFrame {
         }
     }
     
-    private boolean validateIDFamily() {
+    private boolean validateMemberID() {
         try {
             String idText = FieldIDFamily.getText().trim();
             if (idText.isEmpty() || !idText.matches("\\d+")) {
@@ -1000,7 +1007,7 @@ public class ResidentView extends javax.swing.JFrame {
         return true;
     }
     
-    private boolean validateCMT() {
+    private boolean validateIDCard() {
         try {
             String idText = FieldCMT.getText().trim();
             if (idText.isEmpty() || !idText.matches("\\d+")) {
@@ -1070,7 +1077,7 @@ public class ResidentView extends javax.swing.JFrame {
         return true;
     }
     
-    public void showListResidents(List<Residents> list) {
+    public void showListMember(List<GymMember> list) {
         int size = list.size();
         // với bảng tableResident có 6 cột, 
         // khởi tạo mảng 2 chiều residents, trong đó:
@@ -1079,7 +1086,7 @@ public class ResidentView extends javax.swing.JFrame {
         Object [][] residents = new Object[size][7];
         for (int i = 0; i < size; i++) {
             residents[i][0] = list.get(i).getId();
-            residents[i][1] = list.get(i).getIDFamily();
+         //   residents[i][1] = list.get(i).getIDFamily();
             residents[i][2] = list.get(i).getAddress();
             residents[i][3] = list.get(i).getRole();
             residents[i][4] = list.get(i).getName();
@@ -1093,9 +1100,9 @@ public class ResidentView extends javax.swing.JFrame {
     }
     
     
-    public void showResidents(Residents resident) 
+    public void showResidents(GymMember resident) 
     {
-        FieldIDFamily.setText("" + resident.getIDFamily());
+       // FieldIDFamily.setText("" + resident.getIDFamily());
         FieldName.setText(resident.getName());
         BirthdayChooser.setDate(resident.getBirthday());
         TextAreaAddress.setText(resident.getAddress());
@@ -1113,8 +1120,8 @@ public class ResidentView extends javax.swing.JFrame {
             CheckBoxMale.setSelected(false);
             CheckBoxFemale.setSelected(false);
         }
-        ComboBoxCMT.setSelectedItem(""+resident.getTypeCMT());
-        FieldCMT.setText(resident.getCMT());
+        ComboBoxCMT.setSelectedItem(""+resident.getIDCardType());
+        FieldCMT.setText(resident.getIDCard());
         // enable Edit and Delete buttons
         btnEdit.setEnabled(true);
         btnDelete.setEnabled(true);
@@ -1123,16 +1130,16 @@ public class ResidentView extends javax.swing.JFrame {
         btnClear.setEnabled(true);
     }
     
-    public void fillResidentFromSelectedRow(List<Residents> list) throws ParseException {
+    public void fillMemberFromSelectedRow(List<GymMember> list) throws ParseException {
         // lấy chỉ số của hàng được chọn 
         int row = tableResident.getSelectedRow();
         if (row >= 0) {
             int residentID = Integer.parseInt(tableResident.getModel().getValueAt(row, 0).toString());
-            Residents selectedResident = findResidentByID(list, residentID);
+            GymMember selectedResident = findResidentByID(list, residentID);
 
             if (selectedResident != null) {
                 FieldID.setText(String.valueOf(selectedResident.getId()));
-                FieldIDFamily.setText(selectedResident.getIDFamily());
+              //  FieldIDFamily.setText(selectedResident.getIDFamily());
                 FieldName.setText(selectedResident.getName());
                 BirthdayChooser.setDate(selectedResident.getBirthday());
                 TextAreaAddress.setText(selectedResident.getAddress());
@@ -1150,8 +1157,8 @@ public class ResidentView extends javax.swing.JFrame {
                     CheckBoxMale.setSelected(false);
                     CheckBoxFemale.setSelected(false);
                 }
-                ComboBoxCMT.setSelectedItem(selectedResident.getTypeCMT());
-                FieldCMT.setText(selectedResident.getCMT());
+                ComboBoxCMT.setSelectedItem(selectedResident.getIDCardType());
+                FieldCMT.setText(selectedResident.getIDCard());
                 // enable Edit and Delete buttons
                 btnEdit.setEnabled(true);
                 btnDelete.setEnabled(true);
@@ -1182,8 +1189,8 @@ public class ResidentView extends javax.swing.JFrame {
         }
     }
 
-    private Residents findResidentByID(List<Residents> residentsList, int residentID) {
-        for (Residents resident : residentsList) {
+    private GymMember findResidentByID(List<GymMember> residentsList, int residentID) {
+        for (GymMember resident : residentsList) {
             if (resident.getId() == residentID) {
                 return resident;
             }
@@ -1191,7 +1198,7 @@ public class ResidentView extends javax.swing.JFrame {
         return null; // Trả về null nếu không tìm thấy đối tượng
     }
     
-    public void clearResidentInfo() {
+    public void clearMemberInfo() {
         FieldID.setText("");
         FieldIDFamily.setText("");
         ComboBoxRole.setSelectedItem("<none>");
@@ -1213,12 +1220,12 @@ public class ResidentView extends javax.swing.JFrame {
         btnAdd.setEnabled(true);
     }
     
-    public void showCountListResidents(List<Residents> list) {
+    public void showCountListMembers(List<GymMember> list) {
         int size = list.size();
         FieldSum.setText(String.valueOf(size));
     }
     
-    public void SearchResidentInfo() {
+    public void SearchMemberInfo() {
         //FrameSearch = new ManagerView();
         SearchDialog.setVisible(true);
     }
@@ -1279,12 +1286,12 @@ public class ResidentView extends javax.swing.JFrame {
     }
     */
     
-    public void searchResidentInfo() {
+    public void searchMemberInfo() {
         //FrameSearch = new ManagerView();
         SearchDialog.setVisible(true);
     }
     
-    public void cancelDialogSearchResidentInfo() {
+    public void cancelDialogSearchMemberInfo() {
         //FrameSearch = new ManagerView();
         SearchDialog.setVisible(false);
     }
@@ -1297,7 +1304,7 @@ public class ResidentView extends javax.swing.JFrame {
         return 0;
     }
     
-    public void cancelSearchResident()
+    public void cancelSearchMember()
     {
         String id=FieldID.getText();
         btnCancelSearch.setEnabled(false);
@@ -1339,15 +1346,15 @@ public class ResidentView extends javax.swing.JFrame {
         btnResidentUndo.addActionListener(listener);
     }
     
-    public void addAddResidentListener(ActionListener listener) {
+    public void addAddMemberListener(ActionListener listener) {
         btnAdd.addActionListener(listener);
     }
     
-    public void addListResidentSelectionListener(ListSelectionListener listener) {
+    public void addListMemberSelectionListener(ListSelectionListener listener) {
         tableResident.getSelectionModel().addListSelectionListener(listener);
     }
     
-    public void addEditResidentListener(ActionListener listener) {
+    public void addEditMemberListener(ActionListener listener) {
         btnEdit.addActionListener(listener);
     }
     
@@ -1355,11 +1362,11 @@ public class ResidentView extends javax.swing.JFrame {
         btnClear.addActionListener(listener);
     }
     
-    public void addDeleteSpecialPersonListener(ActionListener listener) {
+    public void addDeleteMemberListener(ActionListener listener) {
         btnDelete.addActionListener(listener);
     }
     
-    public void addSortSpecialPersonListener(ActionListener listener) {
+    public void addSortMemberListener(ActionListener listener) {
         btnSort.addActionListener(listener);
     }
     
@@ -1371,7 +1378,7 @@ public class ResidentView extends javax.swing.JFrame {
         btnSearchDialog.addActionListener(listener);
     }
     
-    public void addCancelSearchResidentListener(ActionListener listener){
+    public void addCancelSearchMemberListener(ActionListener listener){
         btnCancelSearch.addActionListener(listener);
     }
     

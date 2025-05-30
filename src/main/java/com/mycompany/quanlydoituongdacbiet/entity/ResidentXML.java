@@ -16,13 +16,13 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlRootElement(name = "Residents")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class ResidentXML {
-    private List<Residents> residents;
+    private List<GymMember> residents;
 
-    public List<Residents> getResidents() {
+    public List<GymMember> getResidents() {
         return residents;
     }
 
-    public void setResidents(List<Residents> residents) {
+    public void setResidents(List<GymMember> residents) {
         this.residents = residents;
     } 
 }

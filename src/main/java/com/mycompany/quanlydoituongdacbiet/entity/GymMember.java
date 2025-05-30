@@ -15,59 +15,57 @@ import javax.xml.bind.annotation.XmlRootElement;
  * @author PC
  */
 
-@XmlRootElement(name = "Resident")
+@XmlRootElement(name = "GymMember")
 @XmlAccessorType(XmlAccessType.FIELD)
-public class Residents extends Person
+public class GymMember extends Person
 {
-    private String IDFamily;
+   private String MemberID;
     private String sex;
     private String role;
     private String birthPlace;
     private Date birthDay;
-    private String typeCMT;
-    private String CMT;
+    private String IDCardType;
+    private String IDCard;
     private String phoneNumber;
-    private String goiTap ;
-    private Date NgayDangKy ; 
-    private Date NgayHetHan ;
-    private SimpleDateFormat fDate=new SimpleDateFormat("dd/MM/yyyy");
-
-    public Residents()
+    private String goiTap;
+    private Date NgayDangKy;
+    private Date NgayHetHan;
+    private SimpleDateFormat fDate = new SimpleDateFormat("dd/MM/yyyy");
+    public GymMember()
     {
-        this.CMT="";
-        this.typeCMT="<none>";
+        this.IDCard="";
+        this.IDCardType="<none>";
         this.phoneNumber="";
     }
     
-    public Residents(int id, String name, Date birthday, String address, String IDFamily, String sex, String role, String birthPlace, String typeCMT, String CMT, String phoneNumber , String goiTap , Date NgayDangKy , Date NgayHetHan )
+   public GymMember(String MemberID, Date birthday, String address, String sex, String role, String birthPlace, String IDCardType, String IDCard , String phoneNumber , String goiTap , Date NgayDangKy , Date NgayHetHan )
     {
         super();
         SimpleDateFormat fDate=new SimpleDateFormat("dd/MM/yyyy");
-        this.id = id;
-        this.name = name;
+       
+        this.MemberID = MemberID;
         this.birthDay = birthday;
         this.address = address;
-        this.IDFamily = IDFamily;
+        this.IDCard = IDCard;
         this.sex = sex;
         this.role = role;
         this.birthPlace = birthPlace;
-        this.typeCMT = typeCMT;
+        this.IDCardType =  IDCardType;
         this.goiTap = goiTap ; 
         this.NgayDangKy = NgayDangKy ; 
         this.NgayHetHan = NgayHetHan ;
         
     }
-    
-    public String getIDFamily()
-    {
-        return this.IDFamily;
+
+    public String getMemberID() {
+        return MemberID;
+    }
+
+    public void setMemberID(String MemberID) {
+        this.MemberID = MemberID;
     }
     
-    public void setIDFamily(String number)
-    {
-        this.IDFamily = number;
-    }
-    
+  
     public String getSex()
     {
         return this.sex;
@@ -98,24 +96,24 @@ public class Residents extends Person
         this.birthPlace=_birthPlace;
     }
     
-    public String getTypeCMT()
+    public String getIDCardType()
     {
-        return this.typeCMT;
+        return this.IDCardType;
     }
     
-    public void setTypeCMT(String typeCMT)
+    public void setIDCardType(String IDCardType)
     {
-        this.typeCMT = typeCMT;
+        this.IDCardType = IDCardType;
     }
     
-    public String getCMT()
+    public String getIDCard()
     {
-        return this.CMT;
+        return this.IDCard;
     }
     
-    public void setCMT(String cmt)
+    public void setIDCard(String IDCard)
     {
-        this.CMT=cmt;
+        this.IDCard=IDCard;
     }
     
     public String getPhoneNumber()
