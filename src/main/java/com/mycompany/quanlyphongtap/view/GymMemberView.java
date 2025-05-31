@@ -2,8 +2,8 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package com.mycompany.quanlydoituongdacbiet.view;
-import com.mycompany.quanlydoituongdacbiet.entity.GymMember;
+package com.mycompany.quanlyphongtap.view;
+import com.mycompany.quanlyphongtap.entity.GymMember;
 import com.raven.chart.Chart;
 import com.raven.chart.ModelChart;
 import java.awt.event.ActionListener;

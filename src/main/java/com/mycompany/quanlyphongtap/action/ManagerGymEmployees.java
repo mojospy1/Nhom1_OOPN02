@@ -2,12 +2,12 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.mycompany.quanlydoituongdacbiet.action;
+package com.mycompany.quanlyphongtap.action;
 
-import com.mycompany.quanlydoituongdacbiet.entity.Employees;
-import com.mycompany.quanlydoituongdacbiet.entity.EmployeesXML;
-import com.mycompany.quanlydoituongdacbiet.utils.FileUtils;
-import com.mycompany.quanlydoituongdacbiet.view.ManagerView;
+import com.mycompany.quanlyphongtap.entity.Employees;
+import com.mycompany.quanlyphongtap.entity.EmployeesXML;
+import com.mycompany.quanlyphongtap.utils.FileUtils;
+import com.mycompany.quanlyphongtap.view.ManagerView;
 import java.text.Collator;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -21,11 +21,11 @@ import java.util.Locale;
  *
  * @author PC
  */
-public class ManagerSpecialPerson 
+public class ManagerGymEmployees 
 {
     private static final String SPECIALPERSON_FILE_NAME = "SpecialPerson.xml";
     private List<Employees> listSpecialPersons;
-    public ManagerSpecialPerson() {
+    public ManagerGymEmployees() {
         this.listSpecialPersons = readListSpecialPersons();
         if (listSpecialPersons == null) {
             listSpecialPersons = new ArrayList<Employees>();

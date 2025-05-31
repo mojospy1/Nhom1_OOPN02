@@ -1,7 +1,7 @@
-/Users/ngocanh/Documents/OOP_V1/DTDBv1/src/main/java/com/mycompany/quanlydoituongdacbiet/QuanLyDoiTuong/QuanLyDoiTuongDacBiet.java
+/Users/ngocanh/Documents/OOP_V1/DTDBv1/src/main/java/com/mycompany/quanlydoituongdacbiet/QuanLyDoiTuong/QuanLy.java
 /Users/ngocanh/Documents/OOP_V1/DTDBv1/src/main/java/com/mycompany/quanlydoituongdacbiet/action/CheckLogin.java
+/Users/ngocanh/Documents/OOP_V1/DTDBv1/src/main/java/com/mycompany/quanlydoituongdacbiet/action/ManagerGymEmployees.java
 /Users/ngocanh/Documents/OOP_V1/DTDBv1/src/main/java/com/mycompany/quanlydoituongdacbiet/action/ManagerGymMember.java
-/Users/ngocanh/Documents/OOP_V1/DTDBv1/src/main/java/com/mycompany/quanlydoituongdacbiet/action/ManagerSpecialPerson.java
 /Users/ngocanh/Documents/OOP_V1/DTDBv1/src/main/java/com/mycompany/quanlydoituongdacbiet/controller/GymMemberController.java
 /Users/ngocanh/Documents/OOP_V1/DTDBv1/src/main/java/com/mycompany/quanlydoituongdacbiet/controller/LoginController.java
 /Users/ngocanh/Documents/OOP_V1/DTDBv1/src/main/java/com/mycompany/quanlydoituongdacbiet/controller/MainController.java

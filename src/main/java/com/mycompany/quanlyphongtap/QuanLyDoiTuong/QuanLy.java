@@ -2,10 +2,10 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  */
 
-package com.mycompany.quanlydoituongdacbiet.QuanLyDoiTuong;
+package com.mycompany.quanlyphongtap.QuanLyDoiTuong;
 
-import com.mycompany.quanlydoituongdacbiet.controller.LoginController;
-import com.mycompany.quanlydoituongdacbiet.view.LoginView;
+import com.mycompany.quanlyphongtap.controller.LoginController;
+import com.mycompany.quanlyphongtap.view.LoginView;
 import java.awt.EventQueue;
 import javax.swing.JFrame;
 

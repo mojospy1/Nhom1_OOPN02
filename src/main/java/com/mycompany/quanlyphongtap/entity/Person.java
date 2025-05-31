@@ -2,8 +2,8 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.mycompany.quanlydoituongdacbiet.entity;
-import com.mycompany.quanlydoituongdacbiet.utils.FileUtils;
+package com.mycompany.quanlyphongtap.entity;
+import com.mycompany.quanlyphongtap.utils.FileUtils;
 import java.io.Serializable;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

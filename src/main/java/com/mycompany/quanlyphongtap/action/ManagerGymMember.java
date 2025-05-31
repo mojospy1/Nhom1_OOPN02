@@ -2,12 +2,12 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.mycompany.quanlydoituongdacbiet.action;
+package com.mycompany.quanlyphongtap.action;
 
-import com.mycompany.quanlydoituongdacbiet.entity.ResidentXML;
-import com.mycompany.quanlydoituongdacbiet.entity.GymMember;
-import com.mycompany.quanlydoituongdacbiet.utils.FileUtils;
-import com.mycompany.quanlydoituongdacbiet.view.GymMemberView;
+import com.mycompany.quanlyphongtap.entity.ResidentXML;
+import com.mycompany.quanlyphongtap.entity.GymMember;
+import com.mycompany.quanlyphongtap.utils.FileUtils;
+import com.mycompany.quanlyphongtap.view.GymMemberView;
 import java.text.Collator;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

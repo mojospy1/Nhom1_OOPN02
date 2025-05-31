@@ -2,13 +2,13 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.mycompany.quanlydoituongdacbiet.controller;
+package com.mycompany.quanlyphongtap.controller;
 
-import com.mycompany.quanlydoituongdacbiet.action.ManagerSpecialPerson;
-import com.mycompany.quanlydoituongdacbiet.entity.Employees;
-import com.mycompany.quanlydoituongdacbiet.view.LoginView;
-import com.mycompany.quanlydoituongdacbiet.view.MainView;
-import com.mycompany.quanlydoituongdacbiet.view.ManagerView;
+import com.mycompany.quanlyphongtap.action.ManagerGymEmployees;
+import com.mycompany.quanlyphongtap.entity.Employees;
+import com.mycompany.quanlyphongtap.view.LoginView;
+import com.mycompany.quanlyphongtap.view.MainView;
+import com.mycompany.quanlyphongtap.view.ManagerView;
 import java.util.List;
 //////import java.util.ArrayList;
 import java.awt.event.ActionEvent;
@@ -31,14 +31,14 @@ import javax.swing.table.DefaultTableModel;
 public class SpecialPersonController 
 {
     private SimpleDateFormat fDate=new SimpleDateFormat("dd/MM/yyyy");
-    private ManagerSpecialPerson managerSpecialPerson;
+    private ManagerGymEmployees managerSpecialPerson;
     private ManagerView specialPersonView;
     private LoginView loginView;
     private MainView mainView;
     public SpecialPersonController(ManagerView view) 
     {
         this.specialPersonView = view;
-        managerSpecialPerson = new ManagerSpecialPerson();
+        managerSpecialPerson = new ManagerGymEmployees();
         view.addAddSpecialPersonListener(new AddSpecialPersonListener());
         view.addEditSpecialPersonListener(new EditSpecialPersonListener());
         view.addClearListener(new ClearSpecialPersonListener());

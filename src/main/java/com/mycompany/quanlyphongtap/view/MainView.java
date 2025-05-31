@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package com.mycompany.quanlydoituongdacbiet.view;
+package com.mycompany.quanlyphongtap.view;
 import java.awt.event.ActionListener;
 import javax.swing.ImageIcon;
 

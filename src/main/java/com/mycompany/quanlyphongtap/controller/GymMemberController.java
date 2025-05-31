@@ -1,11 +1,12 @@
 /*
  * Controller quản lý thành viên phòng gym
  */
-package com.mycompany.quanlydoituongdacbiet.controller;
+package com.mycompany.quanlyphongtap.controller;
 
-import com.mycompany.quanlydoituongdacbiet.action.ManagerGymMember;
-import com.mycompany.quanlydoituongdacbiet.entity.GymMember;
-import com.mycompany.quanlydoituongdacbiet.view.*;
+import com.mycompany.quanlyphongtap.action.ManagerGymMember;
+import com.mycompany.quanlyphongtap.entity.GymMember;
+import com.mycompany.quanlyphongtap.view.GymMemberView;
+import com.mycompany.quanlyphongtap.view.MainView;
 
 import java.awt.event.*;
 import java.text.ParseException;
