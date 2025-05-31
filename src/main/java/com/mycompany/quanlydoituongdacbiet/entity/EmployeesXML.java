@@ -1,4 +1,4 @@
-package com.mycompany.quanlyphongtap.entity;
+package com.mycompany.quanlydoituongdacbiet.entity;
 
 import java.util.List;
 

@@ -2,13 +2,13 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.mycompany.quanlyphongtap.controller;
+package com.mycompany.quanlydoituongdacbiet.controller;
 
-import com.mycompany.quanlyphongtap.action.CheckLogin;
-import com.mycompany.quanlyphongtap.entity.User;
-import com.mycompany.quanlyphongtap.view.LoginView;
-import com.mycompany.quanlyphongtap.view.MainView;
-import com.mycompany.quanlyphongtap.view.ManagerView;
+import com.mycompany.quanlydoituongdacbiet.action.CheckLogin;
+import com.mycompany.quanlydoituongdacbiet.entity.User;
+import com.mycompany.quanlydoituongdacbiet.view.LoginView;
+import com.mycompany.quanlydoituongdacbiet.view.MainView;
+import com.mycompany.quanlydoituongdacbiet.view.ManagerView;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.ImageIcon;

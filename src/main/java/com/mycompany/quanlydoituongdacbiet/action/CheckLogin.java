@@ -2,9 +2,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.mycompany.quanlyphongtap.action;
+package com.mycompany.quanlydoituongdacbiet.action;
 
-import com.mycompany.quanlyphongtap.entity.User;
+import com.mycompany.quanlydoituongdacbiet.entity.User;
 
 /**
  *

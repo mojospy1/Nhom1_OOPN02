@@ -47,7 +47,7 @@
         </Component>
       </SubComponents>
     </Container>
-    <Component class="com.mycompany.quanlyphongtap.QuanLyDoiTuong.QuanLy" name="quanLyDoiTuongDacBiet1">
+    <Component class="com.mycompany.quanlydoituongdacbiet.QuanLyDoiTuong.QuanLy" name="quanLyDoiTuongDacBiet1">
     </Component>
   </NonVisualComponents>
   <Properties>
