@@ -1054,12 +1054,14 @@ public class ManagerView extends javax.swing.JFrame {
         // khởi tạo mảng 2 chiều specialPersons, trong đó:
         // số hàng: là kích thước của list specialPerson 
         // số cột: là 7
-        Object [][] specialPersons = new Object[size][7];
+        Object [][] specialPersons = new Object[size][9];
         for (int i = 0; i < size; i++) {
             specialPersons[i][0] = list.get(i).getId();
             specialPersons[i][1] = list.get(i).getName();
             specialPersons[i][2] = fDate.format(list.get(i).getBirthday());
             specialPersons[i][3] = list.get(i).getAddress();
+//            specialPersons[i][4] = list.get(i).getEmail();
+//            specialPersons[i][5] = list.get(i).getNumberPhone();
             specialPersons[i][4] = fDate.format(list.get(i).getOpeningDate());
             specialPersons[i][5] = list.get(i).getType();
             specialPersons[i][6] = list.get(i).getImage();

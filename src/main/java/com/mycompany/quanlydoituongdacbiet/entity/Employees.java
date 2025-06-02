@@ -23,19 +23,21 @@ import javax.xml.bind.annotation.XmlRootElement;
 public class Employees extends Person implements Serializable
 {
     private static final long serialVersionUID = 1L;
-   // private int id;
-  //  private String name;
-  //  private int year;
-  //  private String address;
+    private int id;
+    private String name;
+    private int year;
+    private String address;
     private Date OpeningDate;
     private String type;
     private byte[] picture;
+    private String numberphone ; 
+    private String email ; 
     //private SimpleDateFormat fDate=new SimpleDateFormat("dd/MM/yyyy");
     public Employees() 
     {
         
     }
-    public Employees(int id, String name, Date birthday, String address, String OpeningDate, String type, byte[] image) throws ParseException 
+    public Employees(int id, String name, Date birthday, String address, String OpeningDate, String type, byte[] image , String numberphone , String email ) throws ParseException 
     {
         super();
         SimpleDateFormat fDate=new SimpleDateFormat("dd/MM/yyyy");
@@ -46,8 +48,27 @@ public class Employees extends Person implements Serializable
         this.OpeningDate = fDate.parse(OpeningDate);
         this.type=type;
         this.picture=image;
+        this.numberphone = numberphone ; 
+        this.email = email ; 
     }
-    
+    public String getEmail() 
+    {
+        return this.email;
+    }
+
+    public void setEmail(String email) 
+    {
+        this.email = email;
+    }
+    public String getNumberPhone() 
+    {
+        return this.numberphone;
+    }
+
+    public void setNumberPhone(String numberphone ) 
+    {
+        this.numberphone = numberphone ;
+    }
     public Date getOpeningDate() 
     {
         return this.OpeningDate;
