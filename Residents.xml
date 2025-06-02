@@ -5,7 +5,7 @@
         <birthday>1965-05-11T16:04:50.211+07:00</birthday>
         <id>1</id>
         <name>Đỗ Nguyễn Hào</name>
-        <MemberID>01253854</MemberID>
+        <MemberID>01253851</MemberID>
         <sex>Nam</sex>
         <role>Gym</role>
         <birthPlace>Thái Bình</birthPlace>
@@ -18,7 +18,7 @@
         <birthday>1968-05-14T23:10:29.037+07:00</birthday>
         <id>2</id>
         <name>Vũ Thị Thanh</name>
-        <MemberID>01253854</MemberID>
+        <MemberID>01253852</MemberID>
         <sex>Nữ</sex>
         <role>Yoga</role>
         <birthPlace>Thái Bình</birthPlace>
@@ -31,7 +31,7 @@
         <birthday>1988-03-16T23:11:39.947+07:00</birthday>
         <id>3</id>
         <name>Đỗ Nguyễn Hinh</name>
-        <MemberID>01396548</MemberID>
+        <MemberID>01396543</MemberID>
         <sex>Nam</sex>
         <role>MMA</role>
         <birthPlace>Thái Bình</birthPlace>
@@ -44,7 +44,7 @@
         <birthday>1992-05-14T00:00:00+07:00</birthday>
         <id>4</id>
         <name>Nguyễn Thị Huyền Trang</name>
-        <MemberID>01396548</MemberID>
+        <MemberID>01396544</MemberID>
         <sex>Nữ</sex>
         <role>Yoga</role>
         <birthPlace>Thái Bình</birthPlace>
@@ -57,7 +57,7 @@
         <birthday>1990-01-07T23:17:16.998+07:00</birthday>
         <id>5</id>
         <name>Đỗ Thị Tuyền</name>
-        <MemberID>01253854</MemberID>
+        <MemberID>01253855</MemberID>
         <sex>Nữ</sex>
         <role>Yoga</role>
         <birthPlace>Ninh Bình</birthPlace>
@@ -70,7 +70,7 @@
         <birthday>2002-03-18T00:00:00+07:00</birthday>
         <id>6</id>
         <name>Đỗ Nguyễn Trung Hiếu</name>
-        <MemberID>01253854</MemberID>
+        <MemberID>01253866</MemberID>
         <sex>Nữ</sex>
         <role>Boxing</role>
         <birthPlace>Hà NỘi</birthPlace>
@@ -83,9 +83,9 @@
         <birthday>2016-03-16T23:25:11.306+07:00</birthday>
         <id>7</id>
         <name>Đỗ Ngọc Hân</name>
-        <MemberID>01396548</MemberID>
+        <MemberID>01396547</MemberID>
         <sex>Nữ</sex>
-        <role>Con</role>
+        <role>Yoga</role>
         <birthPlace>Hưng Yên</birthPlace>
         <IDCardType>Thẻ Tháng</IDCardType>
         <IDCard>098653212548</IDCard>
@@ -96,7 +96,7 @@
         <birthday>2020-05-07T23:26:26.859+07:00</birthday>
         <id>8</id>
         <name>Nguyễn Ngọc Ánh</name>
-        <MemberID>01253854</MemberID>
+        <MemberID>01253858</MemberID>
         <sex>Nữ</sex>
         <role>Boxing</role>
         <birthPlace>Hà Nội</birthPlace>

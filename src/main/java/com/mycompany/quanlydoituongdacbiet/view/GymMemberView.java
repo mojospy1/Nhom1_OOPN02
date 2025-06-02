@@ -282,7 +282,7 @@ public class GymMemberView extends javax.swing.JFrame {
 
         btnGroupSearch.add(CheckBoxIDFamily);
         CheckBoxIDFamily.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        CheckBoxIDFamily.setText("Số hộ khẩu");
+        CheckBoxIDFamily.setText("ID hội viên");
         CheckBoxIDFamily.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel3.add(CheckBoxIDFamily);
         CheckBoxIDFamily.setBounds(20, 230, 120, 25);
@@ -595,9 +595,9 @@ public class GymMemberView extends javax.swing.JFrame {
         ComboBoxRole.setOpaque(false);
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        jLabel1.setText("Môn Tập:");
+        jLabel1.setText("Vai Trò:");
         jPanel1.add(jLabel1);
-        jLabel1.setBounds(880, 100, 90, 40);
+        jLabel1.setBounds(840, 100, 70, 40);
 
         FieldIDFamily.setFont(new java.awt.Font("Times New Roman", 0, 20)); // NOI18N
         FieldIDFamily.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(0, 51, 102)));
