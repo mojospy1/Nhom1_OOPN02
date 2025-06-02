@@ -39,10 +39,10 @@ import javax.swing.table.TableColumnModel;
 public class GymMemberView extends javax.swing.JFrame {
 
     /**
-     * Creates new form ResidentView
+     * Creates new form GymMemberView
      */
     private String [] columnNames = new String [] {
-         "STT", "ID hội viên", "Phòng tập", "Vai trò", "Họ và tên", "Ngày sinh",  "Liên hệ"};
+         "STT", "ID hội viên", "Địa chỉ", "Môn Tập", "Họ và tên", "Ngày sinh",  "Liên hệ"};
     private SimpleDateFormat fDate=new SimpleDateFormat("dd/MM/yyyy");
     FlowLayout flowLayout = new FlowLayout();
     public GymMemberView() {
@@ -564,7 +564,7 @@ public class GymMemberView extends javax.swing.JFrame {
         jScrollPane1.setViewportView(tableResident);
 
         jPanel1.add(jScrollPane1);
-        jScrollPane1.setBounds(240, 420, 1030, 260);
+        jScrollPane1.setBounds(230, 420, 1090, 260);
 
         FieldCMT.setFont(new java.awt.Font("Times New Roman", 0, 20)); // NOI18N
         FieldCMT.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(0, 51, 102)));
@@ -589,15 +589,15 @@ public class GymMemberView extends javax.swing.JFrame {
         FieldName.setOpaque(false);
 
         ComboBoxRole.setFont(new java.awt.Font("Times New Roman", 0, 20)); // NOI18N
-        ComboBoxRole.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "<none>", "Quản Lý", "Lễ Tân", "Huấn Luyện Viên", "Nhân viên vệ sinh","Học viên"}));
+        ComboBoxRole.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "<none>","Boxing","Gym","Yoga","MMA"}));
         jPanel1.add(ComboBoxRole);
         ComboBoxRole.setBounds(970, 100, 260, 40);
         ComboBoxRole.setOpaque(false);
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        jLabel1.setText("Vai trò:");
+        jLabel1.setText("Môn Tập:");
         jPanel1.add(jLabel1);
-        jLabel1.setBounds(900, 100, 70, 40);
+        jLabel1.setBounds(880, 100, 90, 40);
 
         FieldIDFamily.setFont(new java.awt.Font("Times New Roman", 0, 20)); // NOI18N
         FieldIDFamily.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(0, 51, 102)));
@@ -802,13 +802,13 @@ public class GymMemberView extends javax.swing.JFrame {
         jLabel9.setIcon(new ImageIcon("src/main/java/com/mycompany/quanlydoituongdacbiet/view/Lovepik_com-500330964-blue-blazed-background.jpg"));
         jLabel9.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel1.add(jLabel9);
-        jLabel9.setBounds(-130, -20, 1640, 890);
+        jLabel9.setBounds(-190, 0, 1640, 890);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 1276, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 1324, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -954,22 +954,22 @@ public class GymMemberView extends javax.swing.JFrame {
             return null;
         }
         try {
-            GymMember residents = new GymMember();
+            GymMember members = new GymMember();
             if (FieldID.getText() != null && !"".equals(FieldID.getText())) {
-                residents.setId(Integer.parseInt(FieldID.getText()));
+                members.setId(Integer.parseInt(FieldID.getText()));
             }
-            if (CheckBoxMale.isSelected()) residents.setSex("Nam"); else residents.setSex("Nữ");
-          //  residents.setIDFamily(FieldIDFamily.getText().trim());
-            residents.setRole(ComboBoxRole.getSelectedItem().toString().trim());
-            residents.setName(capitalizeWords(FieldName.getText().trim()));
+            if (CheckBoxMale.isSelected()) members.setSex("Nam"); else members.setSex("Nữ");
+            members.setMemberID(FieldIDFamily.getText().trim());
+            members.setRole(ComboBoxRole.getSelectedItem().toString().trim());
+            members.setName(capitalizeWords(FieldName.getText().trim()));
             //residents.setYear(Integer.parseInt(FieldYear.getText().trim()));
-            residents.setAddress(capitalizeWords(TextAreaAddress.getText().trim()));
-            residents.setBirthday(BirthdayChooser.getDate());
-            residents.setIDCardType(ComboBoxCMT.getSelectedItem().toString().trim());
-            residents.setIDCard(FieldCMT.getText().trim());
-            residents.setBirthPlace(capitalizeWords(FieldBirthPlace.getText().trim()));
-            residents.setPhoneNumber(FieldPhone.getText().trim());           
-            return residents;
+            members.setAddress(capitalizeWords(TextAreaAddress.getText().trim()));
+            members.setBirthday(BirthdayChooser.getDate());
+            members.setIDCardType(ComboBoxCMT.getSelectedItem().toString().trim());
+            members.setIDCard(FieldCMT.getText().trim());
+            members.setBirthPlace(capitalizeWords(FieldBirthPlace.getText().trim()));
+            members.setPhoneNumber(FieldPhone.getText().trim());           
+            return members;
         } catch (Exception e) {
             showMessage(e.getMessage());
         }
@@ -1083,45 +1083,45 @@ public class GymMemberView extends javax.swing.JFrame {
         // khởi tạo mảng 2 chiều residents, trong đó:
         // số hàng: là kích thước của list resident 
         // số cột: là 7
-        Object [][] residents = new Object[size][7];
+        Object [][] members = new Object[size][7];
         for (int i = 0; i < size; i++) {
-            residents[i][0] = list.get(i).getId();
-         //   residents[i][1] = list.get(i).getIDFamily();
-            residents[i][2] = list.get(i).getAddress();
-            residents[i][3] = list.get(i).getRole();
-            residents[i][4] = list.get(i).getName();
-            residents[i][5] = fDate.format(list.get(i).getBirthday());
-            residents[i][6] = list.get(i).getPhoneNumber();
+            members[i][0] = list.get(i).getId();
+           members[i][1] = list.get(i).getMemberID();
+            members[i][2] = list.get(i).getAddress();
+            members[i][3] = list.get(i).getRole();
+            members[i][4] = list.get(i).getName();
+            members[i][5] = fDate.format(list.get(i).getBirthday());
+           members[i][6] = list.get(i).getPhoneNumber();
         }
         //jLabel1.setLayout(null);
         tableResident.getColumnModel().getColumn(0).setWidth(3);
-        tableResident.setModel(new DefaultTableModel(residents, columnNames));
+        tableResident.setModel(new DefaultTableModel(members, columnNames));
         //tableResident.removeColumn(tableResident.getColumnModel().getColumn(6));
     }
     
     
-    public void showResidents(GymMember resident) 
+    public void showResidents(GymMember members) 
     {
-       // FieldIDFamily.setText("" + resident.getIDFamily());
-        FieldName.setText(resident.getName());
-        BirthdayChooser.setDate(resident.getBirthday());
-        TextAreaAddress.setText(resident.getAddress());
+        FieldIDFamily.setText("" + members.getMemberID());
+        FieldName.setText(members.getName());
+        BirthdayChooser.setDate(members.getBirthday());
+        TextAreaAddress.setText(members.getAddress());
         //FieldOpeningDate.setText("" + fDate.format(resident.getOpeningDate()));
-        ComboBoxRole.setSelectedItem(""+resident.getRole());
-        FieldPhone.setText(""+resident.getPhoneNumber());
-        FieldBirthPlace.setText(""+resident.getBirthPlace());
-        if ("Nam".equals(resident.getSex())) {
+        ComboBoxRole.setSelectedItem(""+members.getRole());
+        FieldPhone.setText(""+members.getPhoneNumber());
+        FieldBirthPlace.setText(""+members.getBirthPlace());
+        if ("Nam".equals(members.getSex())) {
             CheckBoxMale.setSelected(true);
             CheckBoxFemale.setSelected(false);
-        } else if ("Nữ".equals(resident.getSex())) {
+        } else if ("Nữ".equals(members.getSex())) {
             CheckBoxMale.setSelected(false);
             CheckBoxFemale.setSelected(true);
         } else {
             CheckBoxMale.setSelected(false);
             CheckBoxFemale.setSelected(false);
         }
-        ComboBoxCMT.setSelectedItem(""+resident.getIDCardType());
-        FieldCMT.setText(resident.getIDCard());
+        ComboBoxCMT.setSelectedItem(""+members.getIDCardType());
+        FieldCMT.setText(members.getIDCard());
         // enable Edit and Delete buttons
         btnEdit.setEnabled(true);
         btnDelete.setEnabled(true);
@@ -1139,7 +1139,7 @@ public class GymMemberView extends javax.swing.JFrame {
 
             if (selectedResident != null) {
                 FieldID.setText(String.valueOf(selectedResident.getId()));
-              //  FieldIDFamily.setText(selectedResident.getIDFamily());
+                FieldIDFamily.setText(selectedResident.getMemberID());
                 FieldName.setText(selectedResident.getName());
                 BirthdayChooser.setDate(selectedResident.getBirthday());
                 TextAreaAddress.setText(selectedResident.getAddress());
@@ -1237,7 +1237,7 @@ public class GymMemberView extends javax.swing.JFrame {
         return 0;
     }
     
-  /*  public void showStatisticTypeCMT(List<Residents> list) {
+   /*  public void showStatisticTypeCMT(List<Residents> list) {
         Map<String, Integer> countMap = new HashMap<>();
         for (Residents person : list) {
             if (countMap.containsKey(person.getTypeCMT())) {
@@ -1267,24 +1267,25 @@ public class GymMemberView extends javax.swing.JFrame {
             }
         }
     }
+*/
     
-   public void showStatisticIDFamily(List<Residents> list) {
+   public void showStatisticMemberID(List<GymMember> list) {
         Map<String, Integer> countMapIDFamily = new HashMap<>();
 
-        for (Residents person : list) {
+        for (GymMember person : list) {
             // Thống kê số hộ khẩu IDFamily
-            if (countMapIDFamily.containsKey(person.getIDFamily())) {
-                int countIDFamily = countMapIDFamily.get(person.getIDFamily());
-                countMapIDFamily.put(person.getIDFamily(), countIDFamily + 1);
+            if (countMapIDFamily.containsKey(person.getMemberID())) {
+                int countIDFamily = countMapIDFamily.get(person.getMemberID());
+                countMapIDFamily.put(person.getMemberID(), countIDFamily + 1);
             } else {
-                countMapIDFamily.put(person.getIDFamily(), 1);
+                countMapIDFamily.put(person.getMemberID(), 1);
             }
         }
 
         // Gán giá trị thống kê số hộ khẩu IDFamily
-        FieldSumFamily.setText(String.valueOf(countMapIDFamily.size()));
+       // FieldSumFamily.setText(String.valueOf(countMapIDFamily.size()));
     }
-    */
+    
     
     public void searchMemberInfo() {
         //FrameSearch = new ManagerView();
