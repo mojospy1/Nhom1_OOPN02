@@ -13,7 +13,7 @@ import javax.swing.JFrame;
  *
  * @author PC
  */
-public class QuanLy 
+public class QuanLyDoiTuongDacBiet 
 {
     public static void main(String[] args) {
         EventQueue.invokeLater(new Runnable() {
