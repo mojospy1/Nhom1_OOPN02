@@ -1,4 +1,5 @@
 com/mycompany/quanlydoituongdacbiet/QuanLyDoiTuong/QuanLy.class
+com/mycompany/quanlydoituongdacbiet/entity/GymMemberXML.class
 com/mycompany/quanlydoituongdacbiet/action/ManagerGymEmployees.class
 com/mycompany/quanlydoituongdacbiet/action/ManagerGymEmployees$1.class
 com/mycompany/quanlydoituongdacbiet/entity/Employees.class

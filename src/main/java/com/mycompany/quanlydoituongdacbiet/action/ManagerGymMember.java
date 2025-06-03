@@ -4,7 +4,7 @@
  */
 package com.mycompany.quanlydoituongdacbiet.action;
 
-import com.mycompany.quanlydoituongdacbiet.entity.ResidentXML;
+import com.mycompany.quanlydoituongdacbiet.entity.GymMemberXML;
 import com.mycompany.quanlydoituongdacbiet.entity.GymMember;
 import com.mycompany.quanlydoituongdacbiet.utils.FileUtils;
 import com.mycompany.quanlydoituongdacbiet.view.GymMemberView;
@@ -39,8 +39,7 @@ public class ManagerGymMember
     public List<GymMember> readListResidents() 
     {
         List<GymMember> list = new ArrayList<GymMember>();
-        ResidentXML residentXML = (ResidentXML) FileUtils.readXMLFile(
-                RESIDENT_FILE_NAME, ResidentXML.class);
+        GymMemberXML residentXML = (GymMemberXML) FileUtils.readXMLFile(RESIDENT_FILE_NAME, GymMemberXML.class);
         if (residentXML != null) 
         {
             list = residentXML.getResidents();
@@ -50,7 +49,7 @@ public class ManagerGymMember
     
     public void writeListResidents(List<GymMember> residents) 
     {
-        ResidentXML residentXML = new ResidentXML();
+        GymMemberXML residentXML = new GymMemberXML();
         residentXML.setResidents(residents);
         FileUtils.writeXMLtoFile(RESIDENT_FILE_NAME, residentXML);
     }

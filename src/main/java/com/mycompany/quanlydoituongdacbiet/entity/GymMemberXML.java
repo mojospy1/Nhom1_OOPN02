@@ -15,7 +15,7 @@ import javax.xml.bind.annotation.XmlRootElement;
  */
 @XmlRootElement(name = "Residents")
 @XmlAccessorType(XmlAccessType.FIELD)
-public class ResidentXML {
+public class GymMemberXML {
     private List<GymMember> residents;
 
     public List<GymMember> getResidents() {
