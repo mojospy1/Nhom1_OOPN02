@@ -12,14 +12,14 @@ import com.mycompany.quanlydoituongdacbiet.entity.User;
  */
 public class CheckLogin {
     public boolean checkUser(User user) {
-//        if (user != null) {
-//            if ("admin".equals(user.getUserName()) 
-//                    && "admin".equals(user.getPassword())) {
-//                return true;
-//            }
-//        }
-//        return false;
-            return true ;
+        if (user != null) {
+            if ("admin".equals(user.getUserName()) 
+                    && "admin".equals(user.getPassword())) {
+                return true;
+            }
+        }
+        return false;
+//            return true ;
     }
 }
 //cc
