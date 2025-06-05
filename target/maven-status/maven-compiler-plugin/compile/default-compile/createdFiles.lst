@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 com/mycompany/quanlydoituongdacbiet/controller/SpecialPersonController$CancelDialogSearchSpecialPersonListener.class
 com/mycompany/quanlydoituongdacbiet/view/GymMemberView$12.class
 com/mycompany/quanlydoituongdacbiet/view/GymMemberView$22.class
@@ -132,3 +133,13 @@ com/raven/chart/Chart$1.class
 com/mycompany/quanlydoituongdacbiet/controller/SpecialPersonController.class
 com/mycompany/quanlydoituongdacbiet/utils/FileUtils.class
 com/mycompany/quanlydoituongdacbiet/view/LoginView$3.class
+=======
+com\mycompany\quanlydoituongdacbiet\entity\Employees.class
+com\mycompany\quanlydoituongdacbiet\action\ManagerGymEmployees$1.class
+com\mycompany\quanlydoituongdacbiet\action\ManagerGymEmployees.class
+com\mycompany\quanlydoituongdacbiet\action\ManagerGymEmployees$4.class
+com\mycompany\quanlydoituongdacbiet\action\ManagerGymEmployees$2.class
+com\mycompany\quanlydoituongdacbiet\entity\EmployeesXML.class
+com\mycompany\quanlydoituongdacbiet\entity\GymMemberXML.class
+com\mycompany\quanlydoituongdacbiet\action\ManagerGymEmployees$3.class
+>>>>>>> a5551f4 (login)
