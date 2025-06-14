@@ -470,7 +470,7 @@ public class ManagerView extends javax.swing.JFrame {
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Quản lý các đối tượng đặc biệt trong khu vực");
+        setTitle("Quản lý Nhân Viên Phòng Gym");
         setName("ManagerFrame"); // NOI18N
         setResizable(false);
 

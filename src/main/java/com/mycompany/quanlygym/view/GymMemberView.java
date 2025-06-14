@@ -334,8 +334,8 @@ public class GymMemberView extends javax.swing.JFrame {
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Quản lý dân cư trong khu vực");
-        setName("Quản lý dân cư trong khu vực"); // NOI18N
+        setTitle("Quản lý Hội Viên");
+        setName("Quản lý Hội Viên"); // NOI18N
         setSize(new java.awt.Dimension(1207, 665));
 
         jPanel1.setLayout(null);
