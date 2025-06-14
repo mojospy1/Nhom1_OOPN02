@@ -8,11 +8,11 @@ import java.util.List;
 import java.util.ArrayList;
 import com.mycompany.quanlygym.entity.User;
 //=======
-//package com.mycompany.quanlydoituongdacbiet.action;
+//package com.mycompany.quanlygym.action;
 //import java.util.List;
 //import java.util.ArrayList;
-//import com.mycompany.quanlydoituongdacbiet.entity.User;
-//>>>>>>> ee5768bb1962bb638945a58b6fc3284afdade289:src/main/java/com/mycompany/quanlydoituongdacbiet/action/CheckLogin.java
+//import com.mycompany.quanlygym.entity.User;
+//>>>>>>> ee5768bb1962bb638945a58b6fc3284afdade289:src/main/java/com/mycompany/quanlygym/action/CheckLogin.java
 
 /**
  *

@@ -106,7 +106,7 @@ public class LoginView extends javax.swing.JFrame
         jPanel2.add(jLabel3);
         jLabel3.setBounds(300, 20, 420, 130);
 
-        lblAvatar.setIcon(new ImageIcon("src/main/java/com/mycompany/quanlydoituongdacbiet/view/screenshot.jpg"));
+        lblAvatar.setIcon(new ImageIcon("src/main/java/com/mycompany/quanlygym/view/screenshot.jpg"));
         jPanel2.add(lblAvatar);
         lblAvatar.setBounds(-10, 120, 0, 0);
 
@@ -172,9 +172,9 @@ public class LoginView extends javax.swing.JFrame
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("Đăng Nhập");
 
-        jLabel4.setIcon(new ImageIcon("src/main/java/com/mycompany/quanlydoituongdacbiet/view/male.png"));
+        jLabel4.setIcon(new ImageIcon("src/main/java/com/mycompany/quanlygym/view/male.png"));
 
-        jLabel5.setIcon(new ImageIcon("src/main/java/com/mycompany/quanlydoituongdacbiet/view/lock.png"));
+        jLabel5.setIcon(new ImageIcon("src/main/java/com/mycompany/quanlygym/view/lock.png"));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);

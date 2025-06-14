@@ -269,7 +269,7 @@ public class ManagerView extends javax.swing.JFrame {
         CheckBoxName.setBounds(20, 230, 85, 20);
         CheckBoxName.setOpaque(false);
 
-        jLabel11.setIcon(new ImageIcon("src/main/java/com/mycompany/quanlydoituongdacbiet/view/search.png"));
+        jLabel11.setIcon(new ImageIcon("src/main/java/com/mycompany/quanlygym/view/search.png"));
         jPanel3.add(jLabel11);
         jLabel11.setBounds(30, 130, 30, 30);
 
@@ -318,7 +318,7 @@ public class ManagerView extends javax.swing.JFrame {
         btnSearchDialog.setBorder(new RoundedBorder(20));
         btnSearchDialog.setOpaque(false);
 
-        jLabel15.setIcon(new ImageIcon("src/main/java/com/mycompany/quanlydoituongdacbiet/view/viewSearchView.png"));
+        jLabel15.setIcon(new ImageIcon("src/main/java/com/mycompany/quanlygym/view/viewSearchView.png"));
         jLabel15.setText("=");
         jPanel3.add(jLabel15);
         jLabel15.setBounds(0, 0, 450, 360);
@@ -371,7 +371,7 @@ public class ManagerView extends javax.swing.JFrame {
         btnStatisticAge.setBackground(new java.awt.Color(0, 0, 102));
         btnStatisticAge.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         btnStatisticAge.setForeground(new java.awt.Color(255, 255, 255));
-        btnStatisticAge.setIcon(new ImageIcon("src/main/java/com/mycompany/quanlydoituongdacbiet/view/Calendar.png"));
+        btnStatisticAge.setIcon(new ImageIcon("src/main/java/com/mycompany/quanlygym/view/Calendar.png"));
         btnStatisticAge.setText("Tuổi");
         btnStatisticAge.setBorder(null);
         btnStatisticAge.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -384,7 +384,7 @@ public class ManagerView extends javax.swing.JFrame {
         btnStatisticUnder.setBackground(new java.awt.Color(0, 0, 102));
         btnStatisticUnder.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         btnStatisticUnder.setForeground(new java.awt.Color(255, 255, 255));
-        btnStatisticUnder.setIcon(new ImageIcon("src/main/java/com/mycompany/quanlydoituongdacbiet/view/Undo.png"));
+        btnStatisticUnder.setIcon(new ImageIcon("src/main/java/com/mycompany/quanlygym/view/Undo.png"));
         btnStatisticUnder.setText("Quay lại");
         btnStatisticUnder.setBorder(null);
         btnStatisticUnder.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -397,7 +397,7 @@ public class ManagerView extends javax.swing.JFrame {
         btnStatisticType.setBackground(new java.awt.Color(0, 0, 102));
         btnStatisticType.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         btnStatisticType.setForeground(new java.awt.Color(255, 255, 255));
-        btnStatisticType.setIcon(new ImageIcon("src/main/java/com/mycompany/quanlydoituongdacbiet/view/People.png"));
+        btnStatisticType.setIcon(new ImageIcon("src/main/java/com/mycompany/quanlygym/view/People.png"));
         btnStatisticType.setText("Loại đối tượng");
         btnStatisticType.setBorder(null);
         btnStatisticType.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -482,7 +482,7 @@ public class ManagerView extends javax.swing.JFrame {
         btnAdd.setBackground(new java.awt.Color(0, 0, 102));
         btnAdd.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         btnAdd.setForeground(new java.awt.Color(255, 255, 255));
-        btnAdd.setIcon(new ImageIcon("src/main/java/com/mycompany/quanlydoituongdacbiet/view/add.png"));
+        btnAdd.setIcon(new ImageIcon("src/main/java/com/mycompany/quanlygym/view/add.png"));
         btnAdd.setText("Thêm");
         btnAdd.setBorder(null);
         btnAdd.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -495,7 +495,7 @@ public class ManagerView extends javax.swing.JFrame {
         btnCancelSearch.setBackground(new java.awt.Color(0, 0, 102));
         btnCancelSearch.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         btnCancelSearch.setForeground(new java.awt.Color(255, 255, 255));
-        btnCancelSearch.setIcon(new ImageIcon("src/main/java/com/mycompany/quanlydoituongdacbiet/view/cancel.png"));
+        btnCancelSearch.setIcon(new ImageIcon("src/main/java/com/mycompany/quanlygym/view/cancel.png"));
         btnCancelSearch.setText("Hủy tìm kiếm");
         btnCancelSearch.setEnabled(false);
         btnCancelSearch.setToolTipText("");
@@ -510,7 +510,7 @@ public class ManagerView extends javax.swing.JFrame {
         btnManagerUndo.setBackground(new java.awt.Color(0, 0, 102));
         btnManagerUndo.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         btnManagerUndo.setForeground(new java.awt.Color(255, 255, 255));
-        btnManagerUndo.setIcon(new ImageIcon("src/main/java/com/mycompany/quanlydoituongdacbiet/view/LogOut.png"));
+        btnManagerUndo.setIcon(new ImageIcon("src/main/java/com/mycompany/quanlygym/view/LogOut.png"));
         btnManagerUndo.setText("Quay lại");
         btnManagerUndo.setToolTipText("");
         btnManagerUndo.setBorder(null);
@@ -524,7 +524,7 @@ public class ManagerView extends javax.swing.JFrame {
         btnDelete.setBackground(new java.awt.Color(0, 0, 102));
         btnDelete.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         btnDelete.setForeground(new java.awt.Color(255, 255, 255));
-        btnDelete.setIcon(new ImageIcon("src/main/java/com/mycompany/quanlydoituongdacbiet/view/delete.png"));
+        btnDelete.setIcon(new ImageIcon("src/main/java/com/mycompany/quanlygym/view/delete.png"));
         btnDelete.setText("Xóa");
         btnDelete.setBorder(null);
         btnDelete.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -537,7 +537,7 @@ public class ManagerView extends javax.swing.JFrame {
         btnClear.setBackground(new java.awt.Color(0, 0, 102));
         btnClear.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         btnClear.setForeground(new java.awt.Color(255, 255, 255));
-        btnClear.setIcon(new ImageIcon("src/main/java/com/mycompany/quanlydoituongdacbiet/view/trash.png"));
+        btnClear.setIcon(new ImageIcon("src/main/java/com/mycompany/quanlygym/view/trash.png"));
         btnClear.setText("Làm mới");
         btnClear.setToolTipText("");
         btnClear.setBorder(null);
@@ -551,7 +551,7 @@ public class ManagerView extends javax.swing.JFrame {
         btnSearch.setBackground(new java.awt.Color(0, 0, 102));
         btnSearch.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         btnSearch.setForeground(new java.awt.Color(255, 255, 255));
-        btnSearch.setIcon(new ImageIcon("src/main/java/com/mycompany/quanlydoituongdacbiet/view/search.png"));
+        btnSearch.setIcon(new ImageIcon("src/main/java/com/mycompany/quanlygym/view/search.png"));
         btnSearch.setText("Tìm kiếm");
         btnSearch.setBorder(null);
         btnSearch.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -565,7 +565,7 @@ public class ManagerView extends javax.swing.JFrame {
         btnEdit.setBackground(new java.awt.Color(0, 0, 102));
         btnEdit.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         btnEdit.setForeground(new java.awt.Color(255, 255, 255));
-        btnEdit.setIcon(new ImageIcon("src/main/java/com/mycompany/quanlydoituongdacbiet/view/Edit.png"));
+        btnEdit.setIcon(new ImageIcon("src/main/java/com/mycompany/quanlygym/view/Edit.png"));
         btnEdit.setText("Sửa");
         btnEdit.setBorder(null);
         btnEdit.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -575,7 +575,7 @@ public class ManagerView extends javax.swing.JFrame {
             }
         });
 
-        ImageIcon imageIcon = new ImageIcon("src/main/java/com/mycompany/quanlydoituongdacbiet/view/logo.png");
+        ImageIcon imageIcon = new ImageIcon("src/main/java/com/mycompany/quanlygym/view/logo.png");
         Image image = imageIcon.getImage().getScaledInstance(100,100, Image.SCALE_SMOOTH);
         imageIcon=new ImageIcon(image);
         jLabel14.setIcon(imageIcon);
@@ -703,7 +703,7 @@ public class ManagerView extends javax.swing.JFrame {
 
         btnImage.setBackground(new java.awt.Color(255, 255, 255, 0));
         btnImage.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        btnImage.setIcon(new ImageIcon("src/main/java/com/mycompany/quanlydoituongdacbiet/view/green pin.png"));
+        btnImage.setIcon(new ImageIcon("src/main/java/com/mycompany/quanlygym/view/green pin.png"));
         btnImage.setText("<html>Thêm ảnh<br> ");
         btnImage.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnImage.addActionListener(new java.awt.event.ActionListener() {
@@ -842,7 +842,7 @@ public class ManagerView extends javax.swing.JFrame {
         FieldID.setBounds(320, 40, 120, 40);
         FieldID.setOpaque(false);
 
-        jLabel9.setIcon(new ImageIcon("src/main/java/com/mycompany/quanlydoituongdacbiet/view/Lovepik_com-500330964-blue-blazed-background.jpg"));
+        jLabel9.setIcon(new ImageIcon("src/main/java/com/mycompany/quanlygym/view/Lovepik_com-500330964-blue-blazed-background.jpg"));
         jLabel9.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel1.add(jLabel9);
         jLabel9.setBounds(-90, 0, 1640, 890);

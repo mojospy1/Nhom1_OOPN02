@@ -250,7 +250,7 @@ public class GymMemberView extends javax.swing.JFrame {
         CheckBoxName.setBounds(170, 230, 85, 20);
         CheckBoxName.setOpaque(false);
 
-        jLabel20.setIcon(new ImageIcon("src/main/java/com/mycompany/quanlydoituongdacbiet/view/search.png"));
+        jLabel20.setIcon(new ImageIcon("src/main/java/com/mycompany/quanlygym/view/search.png"));
         jPanel3.add(jLabel20);
         jLabel20.setBounds(30, 130, 30, 30);
 
@@ -317,7 +317,7 @@ public class GymMemberView extends javax.swing.JFrame {
         btnSearchDialog.setBorder(new RoundedBorder(20));
         btnSearchDialog.setOpaque(false);
 
-        jLabel22.setIcon(new ImageIcon("src/main/java/com/mycompany/quanlydoituongdacbiet/view/viewSearchView.png"));
+        jLabel22.setIcon(new ImageIcon("src/main/java/com/mycompany/quanlygym/view/viewSearchView.png"));
         jLabel22.setText("=");
         jPanel3.add(jLabel22);
         jLabel22.setBounds(-10, 0, 520, 360);
@@ -348,7 +348,7 @@ public class GymMemberView extends javax.swing.JFrame {
         btnCancelSearch.setBackground(new java.awt.Color(0, 0, 102));
         btnCancelSearch.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         btnCancelSearch.setForeground(new java.awt.Color(255, 255, 255));
-        btnCancelSearch.setIcon(new ImageIcon("src/main/java/com/mycompany/quanlydoituongdacbiet/view/cancel.png"));
+        btnCancelSearch.setIcon(new ImageIcon("src/main/java/com/mycompany/quanlygym/view/cancel.png"));
         btnCancelSearch.setText("Hủy tìm kiếm");
         btnCancelSearch.setToolTipText("");
         btnCancelSearch.setBorder(null);
@@ -363,7 +363,7 @@ public class GymMemberView extends javax.swing.JFrame {
         btnSort.setBackground(new java.awt.Color(0, 0, 102));
         btnSort.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         btnSort.setForeground(new java.awt.Color(255, 255, 255));
-        ImageIcon imageIcon2 = new ImageIcon("src/main/java/com/mycompany/quanlydoituongdacbiet/view/sorting.png");
+        ImageIcon imageIcon2 = new ImageIcon("src/main/java/com/mycompany/quanlygym/view/sorting.png");
         Image image2 = imageIcon2.getImage().getScaledInstance(30, 30, Image.SCALE_SMOOTH);
         btnSort.setIcon(new ImageIcon(image2));
         btnSort.setText("Sắp xếp");
@@ -379,7 +379,7 @@ public class GymMemberView extends javax.swing.JFrame {
         btnResidentUndo.setBackground(new java.awt.Color(0, 0, 102));
         btnResidentUndo.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         btnResidentUndo.setForeground(new java.awt.Color(255, 255, 255));
-        btnResidentUndo.setIcon(new ImageIcon("src/main/java/com/mycompany/quanlydoituongdacbiet/view/LogOut.png"));
+        btnResidentUndo.setIcon(new ImageIcon("src/main/java/com/mycompany/quanlygym/view/LogOut.png"));
         btnResidentUndo.setText("Quay lại");
         btnResidentUndo.setToolTipText("");
         btnResidentUndo.setBorder(null);
@@ -393,7 +393,7 @@ public class GymMemberView extends javax.swing.JFrame {
         btnSearch.setBackground(new java.awt.Color(0, 0, 102));
         btnSearch.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         btnSearch.setForeground(new java.awt.Color(255, 255, 255));
-        btnSearch.setIcon(new ImageIcon("src/main/java/com/mycompany/quanlydoituongdacbiet/view/search.png"));
+        btnSearch.setIcon(new ImageIcon("src/main/java/com/mycompany/quanlygym/view/search.png"));
         btnSearch.setText("Tìm kiếm");
         btnSearch.setBorder(null);
         btnSearch.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -414,7 +414,7 @@ public class GymMemberView extends javax.swing.JFrame {
             }
         });
 
-        ImageIcon imageIcon = new ImageIcon("src/main/java/com/mycompany/quanlydoituongdacbiet/view/logo.png");
+        ImageIcon imageIcon = new ImageIcon("src/main/java/com/mycompany/quanlygym/view/logo.png");
         Image image = imageIcon.getImage().getScaledInstance(100,100, Image.SCALE_SMOOTH);
         imageIcon=new ImageIcon(image);
         jLabel14.setIcon(imageIcon);
@@ -736,7 +736,7 @@ public class GymMemberView extends javax.swing.JFrame {
         btnAdd.setBackground(new java.awt.Color(0, 0, 102));
         btnAdd.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         btnAdd.setForeground(new java.awt.Color(255, 255, 255));
-        btnAdd.setIcon(new ImageIcon("src/main/java/com/mycompany/quanlydoituongdacbiet/view/add.png"));
+        btnAdd.setIcon(new ImageIcon("src/main/java/com/mycompany/quanlygym/view/add.png"));
         btnAdd.setText("Thêm");
         btnAdd.setBorder(null);
         btnAdd.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -751,7 +751,7 @@ public class GymMemberView extends javax.swing.JFrame {
         btnEdit.setBackground(new java.awt.Color(0, 0, 102));
         btnEdit.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         btnEdit.setForeground(new java.awt.Color(255, 255, 255));
-        btnEdit.setIcon(new ImageIcon("src/main/java/com/mycompany/quanlydoituongdacbiet/view/Edit.png"));
+        btnEdit.setIcon(new ImageIcon("src/main/java/com/mycompany/quanlygym/view/Edit.png"));
         btnEdit.setText("Cập nhật");
         btnEdit.setBorder(null);
         btnEdit.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -766,7 +766,7 @@ public class GymMemberView extends javax.swing.JFrame {
         btnDelete.setBackground(new java.awt.Color(0, 0, 102));
         btnDelete.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         btnDelete.setForeground(new java.awt.Color(255, 255, 255));
-        btnDelete.setIcon(new ImageIcon("src/main/java/com/mycompany/quanlydoituongdacbiet/view/delete.png"));
+        btnDelete.setIcon(new ImageIcon("src/main/java/com/mycompany/quanlygym/view/delete.png"));
         btnDelete.setText("Xóa");
         btnDelete.setBorder(null);
         btnDelete.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -781,7 +781,7 @@ public class GymMemberView extends javax.swing.JFrame {
         btnClear.setBackground(new java.awt.Color(0, 0, 102));
         btnClear.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         btnClear.setForeground(new java.awt.Color(255, 255, 255));
-        btnClear.setIcon(new ImageIcon("src/main/java/com/mycompany/quanlydoituongdacbiet/view/trash.png"));
+        btnClear.setIcon(new ImageIcon("src/main/java/com/mycompany/quanlygym/view/trash.png"));
         btnClear.setText("Làm mới");
         btnClear.setToolTipText("");
         btnClear.setBorder(null);
@@ -799,7 +799,7 @@ public class GymMemberView extends javax.swing.JFrame {
         jPanel1.add(jLabel11);
         jLabel11.setBounds(270, 100, 160, 40);
 
-        jLabel9.setIcon(new ImageIcon("src/main/java/com/mycompany/quanlydoituongdacbiet/view/Lovepik_com-500330964-blue-blazed-background.jpg"));
+        jLabel9.setIcon(new ImageIcon("src/main/java/com/mycompany/quanlygym/view/Lovepik_com-500330964-blue-blazed-background.jpg"));
         jLabel9.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel1.add(jLabel9);
         jLabel9.setBounds(-190, 0, 1640, 890);
