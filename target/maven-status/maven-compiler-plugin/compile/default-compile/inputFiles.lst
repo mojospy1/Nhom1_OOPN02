@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /Users/ngocanh/Documents/OOP_V1/DTDBv1/src/main/java/com/mycompany/quanlygym/QuanLyPGym/QuanLy.java
 /Users/ngocanh/Documents/OOP_V1/DTDBv1/src/main/java/com/mycompany/quanlygym/action/CheckLogin.java
 /Users/ngocanh/Documents/OOP_V1/DTDBv1/src/main/java/com/mycompany/quanlygym/action/ManagerGymEmployees.java
@@ -28,34 +27,3 @@
 /Users/ngocanh/Documents/OOP_V1/DTDBv1/src/main/java/com/raven/chart/blankchart/NiceScale.java
 /Users/ngocanh/Documents/OOP_V1/DTDBv1/src/main/java/com/raven/chart/blankchart/SeriesSize.java
 /Users/ngocanh/Documents/OOP_V1/DTDBv1/src/main/java/com/raven/main/Main.java
-=======
-C:\Users\ADMIN\Desktop\git\Nhom1_OOPN02\src\main\java\com\mycompany\quanlydoituongdacbiet\action\CheckLogin.java
-C:\Users\ADMIN\Desktop\git\Nhom1_OOPN02\src\main\java\com\mycompany\quanlydoituongdacbiet\action\ManagerGymEmployees.java
-C:\Users\ADMIN\Desktop\git\Nhom1_OOPN02\src\main\java\com\mycompany\quanlydoituongdacbiet\action\ManagerGymMember.java
-C:\Users\ADMIN\Desktop\git\Nhom1_OOPN02\src\main\java\com\mycompany\quanlydoituongdacbiet\controller\GymMemberController.java
-C:\Users\ADMIN\Desktop\git\Nhom1_OOPN02\src\main\java\com\mycompany\quanlydoituongdacbiet\controller\LoginController.java
-C:\Users\ADMIN\Desktop\git\Nhom1_OOPN02\src\main\java\com\mycompany\quanlydoituongdacbiet\controller\MainController.java
-C:\Users\ADMIN\Desktop\git\Nhom1_OOPN02\src\main\java\com\mycompany\quanlydoituongdacbiet\controller\SpecialPersonController.java
-C:\Users\ADMIN\Desktop\git\Nhom1_OOPN02\src\main\java\com\mycompany\quanlydoituongdacbiet\entity\Employees.java
-C:\Users\ADMIN\Desktop\git\Nhom1_OOPN02\src\main\java\com\mycompany\quanlydoituongdacbiet\entity\EmployeesXML.java
-C:\Users\ADMIN\Desktop\git\Nhom1_OOPN02\src\main\java\com\mycompany\quanlydoituongdacbiet\entity\GymMember.java
-C:\Users\ADMIN\Desktop\git\Nhom1_OOPN02\src\main\java\com\mycompany\quanlydoituongdacbiet\entity\GymMemberXML.java
-C:\Users\ADMIN\Desktop\git\Nhom1_OOPN02\src\main\java\com\mycompany\quanlydoituongdacbiet\entity\Person.java
-C:\Users\ADMIN\Desktop\git\Nhom1_OOPN02\src\main\java\com\mycompany\quanlydoituongdacbiet\entity\User.java
-C:\Users\ADMIN\Desktop\git\Nhom1_OOPN02\src\main\java\com\mycompany\quanlydoituongdacbiet\QuanLyDoiTuong\QuanLyDoiTuongDacBiet.java
-C:\Users\ADMIN\Desktop\git\Nhom1_OOPN02\src\main\java\com\mycompany\quanlydoituongdacbiet\utils\FileUtils.java
-C:\Users\ADMIN\Desktop\git\Nhom1_OOPN02\src\main\java\com\mycompany\quanlydoituongdacbiet\view\GymMemberView.java
-C:\Users\ADMIN\Desktop\git\Nhom1_OOPN02\src\main\java\com\mycompany\quanlydoituongdacbiet\view\LoginView.java
-C:\Users\ADMIN\Desktop\git\Nhom1_OOPN02\src\main\java\com\mycompany\quanlydoituongdacbiet\view\MainView.java
-C:\Users\ADMIN\Desktop\git\Nhom1_OOPN02\src\main\java\com\mycompany\quanlydoituongdacbiet\view\ManagerView.java
-C:\Users\ADMIN\Desktop\git\Nhom1_OOPN02\src\main\java\com\raven\chart\blankchart\BlankPlotChart.java
-C:\Users\ADMIN\Desktop\git\Nhom1_OOPN02\src\main\java\com\raven\chart\blankchart\BlankPlotChatRender.java
-C:\Users\ADMIN\Desktop\git\Nhom1_OOPN02\src\main\java\com\raven\chart\blankchart\NiceScale.java
-C:\Users\ADMIN\Desktop\git\Nhom1_OOPN02\src\main\java\com\raven\chart\blankchart\SeriesSize.java
-C:\Users\ADMIN\Desktop\git\Nhom1_OOPN02\src\main\java\com\raven\chart\Chart.java
-C:\Users\ADMIN\Desktop\git\Nhom1_OOPN02\src\main\java\com\raven\chart\LabelColor.java
-C:\Users\ADMIN\Desktop\git\Nhom1_OOPN02\src\main\java\com\raven\chart\LegendItem.java
-C:\Users\ADMIN\Desktop\git\Nhom1_OOPN02\src\main\java\com\raven\chart\ModelChart.java
-C:\Users\ADMIN\Desktop\git\Nhom1_OOPN02\src\main\java\com\raven\chart\ModelLegend.java
-C:\Users\ADMIN\Desktop\git\Nhom1_OOPN02\src\main\java\com\raven\main\Main.java
->>>>>>> ee5768bb1962bb638945a58b6fc3284afdade289
