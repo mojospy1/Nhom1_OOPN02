@@ -24,7 +24,7 @@ import javax.swing.JOptionPane;
  */
 public class ManagerGymMember 
 {
-    private static final String RESIDENT_FILE_NAME = "Residents.xml";
+    private static final String RESIDENT_FILE_NAME = "GymMembers.xml";
     private List<GymMember> listMember;
     private GymMemberView residentView;
     
