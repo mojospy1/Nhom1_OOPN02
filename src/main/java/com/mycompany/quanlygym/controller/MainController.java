@@ -40,7 +40,7 @@ public class MainController
         public void actionPerformed(ActionEvent e) 
         {
             managerView = new ManagerView();
-            SpecialPersonController managerController = new SpecialPersonController(managerView);
+            GymEmployeesController managerController = new GymEmployeesController(managerView);
             managerController.showManagerView();
             mainView.setVisible(false);
         }

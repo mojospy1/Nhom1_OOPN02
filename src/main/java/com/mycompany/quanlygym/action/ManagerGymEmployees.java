@@ -23,7 +23,7 @@ import java.util.Locale;
  */
 public class ManagerGymEmployees 
 {
-    private static final String SPECIALPERSON_FILE_NAME = "SpecialPerson.xml";
+    private static final String SPECIALPERSON_FILE_NAME = "GymEmployees.xml";
     private List<Employees> listSpecialPersons;
     public ManagerGymEmployees() {
         this.listSpecialPersons = readListSpecialPersons();
@@ -33,7 +33,7 @@ public class ManagerGymEmployees
     }
 
     /**
-     * Lưu các đối tượng SpecialPerson vào file SpecialPerson.xml
+     * Lưu các đối tượng SpecialPerson vào file GymEmployees.xml
      * 
      * @param specialPersons
      */
@@ -45,7 +45,7 @@ public class ManagerGymEmployees
     }
 
     /**
-     * Đọc các đối tượng SpecialPerson từ file SpecialPerson.xml
+     * Đọc các đối tượng SpecialPerson từ file GymEmployees.xml
      * 
      * @return list SpecialPerson
      */

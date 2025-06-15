@@ -2,10 +2,10 @@
 /Users/ngocanh/Documents/OOP_V1/DTDBv1/src/main/java/com/mycompany/quanlygym/action/CheckLogin.java
 /Users/ngocanh/Documents/OOP_V1/DTDBv1/src/main/java/com/mycompany/quanlygym/action/ManagerGymEmployees.java
 /Users/ngocanh/Documents/OOP_V1/DTDBv1/src/main/java/com/mycompany/quanlygym/action/ManagerGymMember.java
+/Users/ngocanh/Documents/OOP_V1/DTDBv1/src/main/java/com/mycompany/quanlygym/controller/GymEmployeesController.java
 /Users/ngocanh/Documents/OOP_V1/DTDBv1/src/main/java/com/mycompany/quanlygym/controller/GymMemberController.java
 /Users/ngocanh/Documents/OOP_V1/DTDBv1/src/main/java/com/mycompany/quanlygym/controller/LoginController.java
 /Users/ngocanh/Documents/OOP_V1/DTDBv1/src/main/java/com/mycompany/quanlygym/controller/MainController.java
-/Users/ngocanh/Documents/OOP_V1/DTDBv1/src/main/java/com/mycompany/quanlygym/controller/SpecialPersonController.java
 /Users/ngocanh/Documents/OOP_V1/DTDBv1/src/main/java/com/mycompany/quanlygym/entity/Employees.java
 /Users/ngocanh/Documents/OOP_V1/DTDBv1/src/main/java/com/mycompany/quanlygym/entity/EmployeesXML.java
 /Users/ngocanh/Documents/OOP_V1/DTDBv1/src/main/java/com/mycompany/quanlygym/entity/GymMember.java
