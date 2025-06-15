@@ -2,7 +2,7 @@
 <Residents>
     <residents>
         <address>Phường Văn Phú,HàĐông,Hà NỘI</address>
-        <birthday>1965-05-11T16:04:50.211+07:00</birthday>
+        <birthday>1965-05-11T17:04:50.211+08:00</birthday>
         <id>1</id>
         <name>Đỗ Nguyễn Hào</name>
         <MemberID>01253851</MemberID>
@@ -15,7 +15,7 @@
     </residents>
     <residents>
         <address>Phường Văn Phú,HàĐông,Hà NỘI</address>
-        <birthday>1968-05-14T23:10:29.037+07:00</birthday>
+        <birthday>1968-05-15T00:10:29.037+08:00</birthday>
         <id>2</id>
         <name>Vũ Thị Thanh</name>
         <MemberID>01253852</MemberID>
@@ -104,4 +104,17 @@
         <IDCard>092523658475</IDCard>
         <phoneNumber>0213548912</phoneNumber>
     </residents>
-</Residents> 
+    <residents>
+        <address>Ádfasđfa</address>
+        <birthday>2000-06-18T21:41:01.838+07:00</birthday>
+        <id>9</id>
+        <name>Ádfasd</name>
+        <MemberID>123123</MemberID>
+        <sex>Nữ</sex>
+        <role>Boxing</role>
+        <birthPlace>Đà</birthPlace>
+        <IDCardType>Thẻ Tháng</IDCardType>
+        <IDCard>2</IDCard>
+        <phoneNumber>0123123123123</phoneNumber>
+    </residents>
+</Residents>

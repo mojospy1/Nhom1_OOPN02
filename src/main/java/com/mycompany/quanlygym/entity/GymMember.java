@@ -9,7 +9,7 @@ import java.util.Date;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlRootElement;
-
+import javax.xml.bind.annotation.XmlTransient;
 /**
  *
  * @author PC
@@ -30,6 +30,7 @@ public class GymMember extends Person
     private String goiTap;
     private Date NgayDangKy;
     private Date NgayHetHan;
+    @XmlTransient
     private SimpleDateFormat fDate = new SimpleDateFormat("dd/MM/yyyy");
     public GymMember()
     {
