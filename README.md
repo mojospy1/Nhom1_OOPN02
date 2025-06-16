@@ -8,7 +8,7 @@ Thành viên nhóm bao gồm:
 1. Tải source code về tại:
 https://github.com/mojospy1/Nhom1_OOPN02
 2. Giải nén và mở source code bằng Apache Netbeans.
-3. Chạy source code bằng cách chọn vào file `QuanLy.java` + `Shift + F6`. Hoặc sử dụng ứng dụng đã được đóng gói `./target/QuanLyDoiTuongDacBiet-1.0-SNAPSHOT.jar`.
+3. Chạy source code bằng cách chọn vào file `QuanLy.java` + `Shift + F6`. Hoặc sử dụng ứng dụng đã được đóng gói `./target/QuanLyPhongGym-1.0-SNAPSHOT.jar`.
 # 📘 Phần mềm Quản lý Phòng Gym
 
 ## 📝 Mô tả phần mềm
