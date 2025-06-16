@@ -56,6 +56,10 @@ Phần mềm quản lý thông tin bao gồm:
 # Chạy chương trình
 ## Tài khoản
 - **Tài khoản**: `admin`
-- **Mật khẩu**: `admin`
+- **Mật khẩu**: `123456`
+-  **Tài khoản**: `user1`
+- **Mật khẩu**: `09092005`
+-  **Tài khoản**: `user2`
+- **Mật khẩu**: `1234`
 
 # Kết thúc
